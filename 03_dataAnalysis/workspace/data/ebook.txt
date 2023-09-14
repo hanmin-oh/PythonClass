@@ -8,6 +8,8 @@ at www.gutenberg.org. If you are not located in the United States,
 you will have to check the laws of the country where you are located
 before using this eBook.
 
+end--
+
 Title: Notes taken during travels in Africa
 
 
@@ -16,6 +18,7 @@ Author: John Davidson
 Release date: September 1, 2023 [eBook #71535]
 
 Language: English
+
 
 Original publication: United Kingdom: J. L. Cox and Sons, 1839
 
