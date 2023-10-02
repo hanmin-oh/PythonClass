@@ -1,0 +1,3681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe9be5dbb14d3cc8e4e29314f40e3aaf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe9be5dbb14d3cc8e4e29314f40e3aaf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe9be5dbb14d3cc8e4e29314f40e3aaf = L.map(
+                "map_fe9be5dbb14d3cc8e4e29314f40e3aaf",
+                {
+                    center: [37.54155075635411, 126.99279203162101],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_647547ed6733f1ee411908d2de4a2d1a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+            var marker_82d55db57bd50cae6bc9711dcdcd242a = L.marker(
+                [37.539544210164, 126.826484310849],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_bb9e8243df754d8e0797daf236fa3ec5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fac8ecfc061b1d8938c5d3a4eb2b3041 = $(`<div id="html_fac8ecfc061b1d8938c5d3a4eb2b3041" style="width: 100.0%; height: 100.0%;">진원컴퓨터학원: 서울특별시 양천구 화곡로 41</div>`)[0];
+                popup_bb9e8243df754d8e0797daf236fa3ec5.setContent(html_fac8ecfc061b1d8938c5d3a4eb2b3041);
+            
+        
+
+        marker_82d55db57bd50cae6bc9711dcdcd242a.bindPopup(popup_bb9e8243df754d8e0797daf236fa3ec5)
+        ;
+
+        
+    
+    
+            var marker_18c3fc7ddc7d5ea4f645cb702aa9b4c1 = L.marker(
+                [37.4759427638555, 126.965659371018],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_40486737abb6671ad276b76fc4e2922e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b2951a7795c0b628ce555900c60067d1 = $(`<div id="html_b2951a7795c0b628ce555900c60067d1" style="width: 100.0%; height: 100.0%;">대성컴퓨터회계학원: 서울특별시 관악구 남부순환로 1952</div>`)[0];
+                popup_40486737abb6671ad276b76fc4e2922e.setContent(html_b2951a7795c0b628ce555900c60067d1);
+            
+        
+
+        marker_18c3fc7ddc7d5ea4f645cb702aa9b4c1.bindPopup(popup_40486737abb6671ad276b76fc4e2922e)
+        ;
+
+        
+    
+    
+            var marker_fb6439a50c924f336dd4f10b2516057e = L.marker(
+                [37.4575080253474, 126.899903324379],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_cdcb5be841973b47b2ce704844b44ddb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec056f0487ad96536565cf9192095afe = $(`<div id="html_ec056f0487ad96536565cf9192095afe" style="width: 100.0%; height: 100.0%;">구로컴퓨터학원: 서울특별시 금천구 시흥대로 266</div>`)[0];
+                popup_cdcb5be841973b47b2ce704844b44ddb.setContent(html_ec056f0487ad96536565cf9192095afe);
+            
+        
+
+        marker_fb6439a50c924f336dd4f10b2516057e.bindPopup(popup_cdcb5be841973b47b2ce704844b44ddb)
+        ;
+
+        
+    
+    
+            var marker_a88045a0f57f965ebaa0fb66cc224de4 = L.marker(
+                [37.5999796678611, 127.082117731752],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_4bde29136700c1d12a58d771d7725ea9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cafbb83ffbe9deb37f35fe3c5a7c47a8 = $(`<div id="html_cafbb83ffbe9deb37f35fe3c5a7c47a8" style="width: 100.0%; height: 100.0%;">아몬정보컴퓨터학원: 서울특별시 중랑구 동일로130길 39</div>`)[0];
+                popup_4bde29136700c1d12a58d771d7725ea9.setContent(html_cafbb83ffbe9deb37f35fe3c5a7c47a8);
+            
+        
+
+        marker_a88045a0f57f965ebaa0fb66cc224de4.bindPopup(popup_4bde29136700c1d12a58d771d7725ea9)
+        ;
+
+        
+    
+    
+            var marker_eb5afbd2fbaaa6746c0b1c6affcb8e7f = L.marker(
+                [37.4997933106566, 127.027136960536],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_91f8a3e8753b7561cc3d5013466efdef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c5a8c27af24b02af34c9df7845db9a8c = $(`<div id="html_c5a8c27af24b02af34c9df7845db9a8c" style="width: 100.0%; height: 100.0%;">구미컴퓨터학원: 서울특별시 강남구 강남대로 416</div>`)[0];
+                popup_91f8a3e8753b7561cc3d5013466efdef.setContent(html_c5a8c27af24b02af34c9df7845db9a8c);
+            
+        
+
+        marker_eb5afbd2fbaaa6746c0b1c6affcb8e7f.bindPopup(popup_91f8a3e8753b7561cc3d5013466efdef)
+        ;
+
+        
+    
+    
+            var marker_1f07e47257dc12c2eb90d0dc99f0a8d2 = L.marker(
+                [37.501112636896, 127.043043969229],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_065dfab8f1b871382e62a5938ce31c02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_53ad0720ecb9e6201bf70b95071706fa = $(`<div id="html_53ad0720ecb9e6201bf70b95071706fa" style="width: 100.0%; height: 100.0%;">한국글로벌널리지네트웍: 서울특별시 강남구 언주로 425</div>`)[0];
+                popup_065dfab8f1b871382e62a5938ce31c02.setContent(html_53ad0720ecb9e6201bf70b95071706fa);
+            
+        
+
+        marker_1f07e47257dc12c2eb90d0dc99f0a8d2.bindPopup(popup_065dfab8f1b871382e62a5938ce31c02)
+        ;
+
+        
+    
+    
+            var marker_a6b56d95e3b501e5568858c33376c1ed = L.marker(
+                [37.620379622381, 127.028150491206],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_e8b8576fb3ca2b94dde2583fd9b6011f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5fe0c5c5e9d5a304914c1613d263598 = $(`<div id="html_b5fe0c5c5e9d5a304914c1613d263598" style="width: 100.0%; height: 100.0%;">예우컴퓨터: 서울특별시 강북구 도봉로 129</div>`)[0];
+                popup_e8b8576fb3ca2b94dde2583fd9b6011f.setContent(html_b5fe0c5c5e9d5a304914c1613d263598);
+            
+        
+
+        marker_a6b56d95e3b501e5568858c33376c1ed.bindPopup(popup_e8b8576fb3ca2b94dde2583fd9b6011f)
+        ;
+
+        
+    
+    
+            var marker_b436c7ffdf802e01f5325832df4864ba = L.marker(
+                [37.6557190078409, 127.037039916742],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_967cac432435056e4bd84703ef7e74d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8687e4352d89906b2aa4884cbdfa4a50 = $(`<div id="html_8687e4352d89906b2aa4884cbdfa4a50" style="width: 100.0%; height: 100.0%;">대성컴퓨터학원: 서울특별시 도봉구 도봉로125길 72</div>`)[0];
+                popup_967cac432435056e4bd84703ef7e74d0.setContent(html_8687e4352d89906b2aa4884cbdfa4a50);
+            
+        
+
+        marker_b436c7ffdf802e01f5325832df4864ba.bindPopup(popup_967cac432435056e4bd84703ef7e74d0)
+        ;
+
+        
+    
+    
+            var marker_8a8fb152d13495cd97b225975bcf70e2 = L.marker(
+                [37.6621572330422, 127.033227820989],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d775d10348bbc83a49bf3665ff0b0566 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_641e59a47bd8337f832fa4c6fdf4ebfa = $(`<div id="html_641e59a47bd8337f832fa4c6fdf4ebfa" style="width: 100.0%; height: 100.0%;">방학컴퓨터학원: 서울특별시 도봉구 방학로 171</div>`)[0];
+                popup_d775d10348bbc83a49bf3665ff0b0566.setContent(html_641e59a47bd8337f832fa4c6fdf4ebfa);
+            
+        
+
+        marker_8a8fb152d13495cd97b225975bcf70e2.bindPopup(popup_d775d10348bbc83a49bf3665ff0b0566)
+        ;
+
+        
+    
+    
+            var marker_fe0389a0b6f9d580d8596ec45544764e = L.marker(
+                [37.5561608384568, 126.939006868199],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d0d9d5cc055d6721752946a49998595c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cff1fcb43c85672f5ab84cecef9a6a15 = $(`<div id="html_cff1fcb43c85672f5ab84cecef9a6a15" style="width: 100.0%; height: 100.0%;">더조은아카데미신촌지점: 서울특별시 서대문구 신촌로 119</div>`)[0];
+                popup_d0d9d5cc055d6721752946a49998595c.setContent(html_cff1fcb43c85672f5ab84cecef9a6a15);
+            
+        
+
+        marker_fe0389a0b6f9d580d8596ec45544764e.bindPopup(popup_d0d9d5cc055d6721752946a49998595c)
+        ;
+
+        
+    
+    
+            var marker_0caac4c1da20e3e16d473b15d29207dc = L.marker(
+                [37.5770611686605, 127.057481044364],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_1f00facedbac6e446bb6ecc62887b916 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bdebc94d7f76fc2aa11687309cffaa78 = $(`<div id="html_bdebc94d7f76fc2aa11687309cffaa78" style="width: 100.0%; height: 100.0%;">덕수컴퓨터회계학원: 서울특별시 동대문구 전농로 135</div>`)[0];
+                popup_1f00facedbac6e446bb6ecc62887b916.setContent(html_bdebc94d7f76fc2aa11687309cffaa78);
+            
+        
+
+        marker_0caac4c1da20e3e16d473b15d29207dc.bindPopup(popup_1f00facedbac6e446bb6ecc62887b916)
+        ;
+
+        
+    
+    
+            var marker_ac75fd3b4d5906d779b8a04f1b0d966f = L.marker(
+                [37.5075095572216, 127.0838845661],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_64cd880f118844b00bf9913417833f38 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b14f44dba00f8493190ff5956719c906 = $(`<div id="html_b14f44dba00f8493190ff5956719c906" style="width: 100.0%; height: 100.0%;">청진수학: 서울특별시 송파구 올림픽로12길 45</div>`)[0];
+                popup_64cd880f118844b00bf9913417833f38.setContent(html_b14f44dba00f8493190ff5956719c906);
+            
+        
+
+        marker_ac75fd3b4d5906d779b8a04f1b0d966f.bindPopup(popup_64cd880f118844b00bf9913417833f38)
+        ;
+
+        
+    
+    
+            var marker_05792a06c8fe743f193da4a75a31004e = L.marker(
+                [37.5851819477936, 127.040995047101],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_6073775af98c0d9df3ba402d808bf8b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_750bb6e740a0b5e5b170a2738402ffd7 = $(`<div id="html_750bb6e740a0b5e5b170a2738402ffd7" style="width: 100.0%; height: 100.0%;">진주컴퓨터학원: 서울특별시 동대문구 홍릉로15길 43</div>`)[0];
+                popup_6073775af98c0d9df3ba402d808bf8b0.setContent(html_750bb6e740a0b5e5b170a2738402ffd7);
+            
+        
+
+        marker_05792a06c8fe743f193da4a75a31004e.bindPopup(popup_6073775af98c0d9df3ba402d808bf8b0)
+        ;
+
+        
+    
+    
+            var marker_317c9ce078888676b0217bb232b362f5 = L.marker(
+                [37.609418830386, 127.029833487886],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_9a9db7f14d4529108e7f2b9b7cf638d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_60e8ecb2af8de1eb085b265d102355ea = $(`<div id="html_60e8ecb2af8de1eb085b265d102355ea" style="width: 100.0%; height: 100.0%;">강북대양전산학원: 서울특별시 성북구 도봉로 3</div>`)[0];
+                popup_9a9db7f14d4529108e7f2b9b7cf638d6.setContent(html_60e8ecb2af8de1eb085b265d102355ea);
+            
+        
+
+        marker_317c9ce078888676b0217bb232b362f5.bindPopup(popup_9a9db7f14d4529108e7f2b9b7cf638d6)
+        ;
+
+        
+    
+    
+            var marker_1a3207635e103e72811d4e2eab297103 = L.marker(
+                [37.5419562667354, 127.095492110877],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_021a72a5111efe7237d9def60459a169 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_474454b1420ee5981aa7311eb5fd4983 = $(`<div id="html_474454b1420ee5981aa7311eb5fd4983" style="width: 100.0%; height: 100.0%;">컴영컴퓨터학원: 서울특별시 광진구 광나루로 603</div>`)[0];
+                popup_021a72a5111efe7237d9def60459a169.setContent(html_474454b1420ee5981aa7311eb5fd4983);
+            
+        
+
+        marker_1a3207635e103e72811d4e2eab297103.bindPopup(popup_021a72a5111efe7237d9def60459a169)
+        ;
+
+        
+    
+    
+            var marker_b8bda7d3fd3b853bdf387c8794224716 = L.marker(
+                [37.5134474502662, 126.942586781376],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_6d6980ef3e221a1e2bb4064cd7b6f4cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b6ea0b887374c68047ca021ccf38b9c = $(`<div id="html_8b6ea0b887374c68047ca021ccf38b9c" style="width: 100.0%; height: 100.0%;">한성정보전산학원: 서울특별시 동작구 노량진로 150</div>`)[0];
+                popup_6d6980ef3e221a1e2bb4064cd7b6f4cb.setContent(html_8b6ea0b887374c68047ca021ccf38b9c);
+            
+        
+
+        marker_b8bda7d3fd3b853bdf387c8794224716.bindPopup(popup_6d6980ef3e221a1e2bb4064cd7b6f4cb)
+        ;
+
+        
+    
+    
+            var marker_ab2206690a74d22488fdd478edd2e3ac = L.marker(
+                [37.5577411700014, 127.168836881524],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8e3e521099fed688735292e07030ac94 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32c070d34be9fc757d1c87b2e5a930b1 = $(`<div id="html_32c070d34be9fc757d1c87b2e5a930b1" style="width: 100.0%; height: 100.0%;">월드컴퓨터학원: 서울특별시 강동구 고덕로83길 14</div>`)[0];
+                popup_8e3e521099fed688735292e07030ac94.setContent(html_32c070d34be9fc757d1c87b2e5a930b1);
+            
+        
+
+        marker_ab2206690a74d22488fdd478edd2e3ac.bindPopup(popup_8e3e521099fed688735292e07030ac94)
+        ;
+
+        
+    
+    
+            var marker_013b5552699e10a8eadeae47e577c0f0 = L.marker(
+                [37.576164074924, 127.025781953261],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_5f0d5363914be3a5be77447f8742233e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_924f2509b82347954fa5835625d4b40f = $(`<div id="html_924f2509b82347954fa5835625d4b40f" style="width: 100.0%; height: 100.0%;">KG아이티뱅크동대문점: 서울특별시 동대문구 왕산로 20</div>`)[0];
+                popup_5f0d5363914be3a5be77447f8742233e.setContent(html_924f2509b82347954fa5835625d4b40f);
+            
+        
+
+        marker_013b5552699e10a8eadeae47e577c0f0.bindPopup(popup_5f0d5363914be3a5be77447f8742233e)
+        ;
+
+        
+    
+    
+            var marker_5ae33b0a5587e4c4538c4ad3eb8c2957 = L.marker(
+                [37.4966812200778, 127.030004603162],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b07b2ee13ef5c09e8815c6673ebbf0fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_724812a42627b77509fdf2fc106f7db1 = $(`<div id="html_724812a42627b77509fdf2fc106f7db1" style="width: 100.0%; height: 100.0%;">KG아이티뱅크강남점: 서울특별시 강남구 강남대로84길 16</div>`)[0];
+                popup_b07b2ee13ef5c09e8815c6673ebbf0fb.setContent(html_724812a42627b77509fdf2fc106f7db1);
+            
+        
+
+        marker_5ae33b0a5587e4c4538c4ad3eb8c2957.bindPopup(popup_b07b2ee13ef5c09e8815c6673ebbf0fb)
+        ;
+
+        
+    
+    
+            var marker_ddf8a810905e1f7bb0ae250dcf1b84e2 = L.marker(
+                [37.5726051918638, 126.99994957203],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_bad1f141e44305eb19c48e6330fc3fd3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_408c82d17a3b3311d1bf84c1669ed6c5 = $(`<div id="html_408c82d17a3b3311d1bf84c1669ed6c5" style="width: 100.0%; height: 100.0%;">KG아이티뱅크연지점: 서울특별시 종로구 종로31가길 15</div>`)[0];
+                popup_bad1f141e44305eb19c48e6330fc3fd3.setContent(html_408c82d17a3b3311d1bf84c1669ed6c5);
+            
+        
+
+        marker_ddf8a810905e1f7bb0ae250dcf1b84e2.bindPopup(popup_bad1f141e44305eb19c48e6330fc3fd3)
+        ;
+
+        
+    
+    
+            var marker_a10a2941bec61c3a13aa55267d32bba3 = L.marker(
+                [37.5620395445328, 127.032825191851],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_00e10134b5a2dea1f99e495ac39e9b0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de2ca1a6bfbdd1e800c4bed236dfb407 = $(`<div id="html_de2ca1a6bfbdd1e800c4bed236dfb407" style="width: 100.0%; height: 100.0%;">이찬진컴퓨터교실: 서울특별시 성동구 무학봉28길 8</div>`)[0];
+                popup_00e10134b5a2dea1f99e495ac39e9b0b.setContent(html_de2ca1a6bfbdd1e800c4bed236dfb407);
+            
+        
+
+        marker_a10a2941bec61c3a13aa55267d32bba3.bindPopup(popup_00e10134b5a2dea1f99e495ac39e9b0b)
+        ;
+
+        
+    
+    
+            var marker_680295bae03475308ca27958260ee572 = L.marker(
+                [37.5246381272594, 126.872422875609],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_310d14d1421db4039f14f67ebedaaecf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fb9c01f5b110aa215b33a19b1ec55dc = $(`<div id="html_3fb9c01f5b110aa215b33a19b1ec55dc" style="width: 100.0%; height: 100.0%;">이찬진컴퓨터교실: 서울특별시 양천구 오목로 316</div>`)[0];
+                popup_310d14d1421db4039f14f67ebedaaecf.setContent(html_3fb9c01f5b110aa215b33a19b1ec55dc);
+            
+        
+
+        marker_680295bae03475308ca27958260ee572.bindPopup(popup_310d14d1421db4039f14f67ebedaaecf)
+        ;
+
+        
+    
+    
+            var marker_8674b02c98ca4ae9fdff889e35f49f67 = L.marker(
+                [37.6217674807304, 127.020553993404],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b66fae9cf43333fd3f135fa5fdbde49d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c3b2bfd38281cb26f7a8a71da013d31 = $(`<div id="html_6c3b2bfd38281cb26f7a8a71da013d31" style="width: 100.0%; height: 100.0%;">성심컴퓨터학원: 서울특별시 강북구 삼양로 202</div>`)[0];
+                popup_b66fae9cf43333fd3f135fa5fdbde49d.setContent(html_6c3b2bfd38281cb26f7a8a71da013d31);
+            
+        
+
+        marker_8674b02c98ca4ae9fdff889e35f49f67.bindPopup(popup_b66fae9cf43333fd3f135fa5fdbde49d)
+        ;
+
+        
+    
+    
+            var marker_09256eb78df5fcb67878029badc60f02 = L.marker(
+                [37.5012647456244, 127.03958123605],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_5736c54c16d2a2afdb8e0ab28b368c42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83f195202759a07beb32cc27f5720eff = $(`<div id="html_83f195202759a07beb32cc27f5720eff" style="width: 100.0%; height: 100.0%;">삼성SDS멀티캠퍼스서울교육센터: 서울특별시 강남구 테헤란로 212</div>`)[0];
+                popup_5736c54c16d2a2afdb8e0ab28b368c42.setContent(html_83f195202759a07beb32cc27f5720eff);
+            
+        
+
+        marker_09256eb78df5fcb67878029badc60f02.bindPopup(popup_5736c54c16d2a2afdb8e0ab28b368c42)
+        ;
+
+        
+    
+    
+            var marker_f1202f53d6ac5f5d979877175332a856 = L.marker(
+                [37.4767483935968, 126.885794171182],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_72310538ca1d432b0c0f2fee86ff410c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0df073dcee8b00f1db47118f5e40d6c0 = $(`<div id="html_0df073dcee8b00f1db47118f5e40d6c0" style="width: 100.0%; height: 100.0%;">아이티뱅크멀티캠퍼스구로점: 서울특별시 금천구 벚꽃로 244</div>`)[0];
+                popup_72310538ca1d432b0c0f2fee86ff410c.setContent(html_0df073dcee8b00f1db47118f5e40d6c0);
+            
+        
+
+        marker_f1202f53d6ac5f5d979877175332a856.bindPopup(popup_72310538ca1d432b0c0f2fee86ff410c)
+        ;
+
+        
+    
+    
+            var marker_780390e26f250c8d96ac9d6bc46b1fee = L.marker(
+                [37.5357502227808, 127.08292819133],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8fa9cc15ad8428e798ecb184d6c24353 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eebf7128e62c1f90c5daebec11cddaa9 = $(`<div id="html_eebf7128e62c1f90c5daebec11cddaa9" style="width: 100.0%; height: 100.0%;">월드컴퓨터학원: 서울특별시 광진구 자양로15길 9</div>`)[0];
+                popup_8fa9cc15ad8428e798ecb184d6c24353.setContent(html_eebf7128e62c1f90c5daebec11cddaa9);
+            
+        
+
+        marker_780390e26f250c8d96ac9d6bc46b1fee.bindPopup(popup_8fa9cc15ad8428e798ecb184d6c24353)
+        ;
+
+        
+    
+    
+            var marker_2208fb9ec2c31c87c01748cc24b65a55 = L.marker(
+                [37.4913270451925, 126.889592027751],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_24db4845b41be5d93c1e1ddf27c50bb9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7b62a511d67751a4ddfdd3fa8cef6aab = $(`<div id="html_7b62a511d67751a4ddfdd3fa8cef6aab" style="width: 100.0%; height: 100.0%;">백상컴퓨터학원: 서울특별시 구로구 구로중앙로7길 28</div>`)[0];
+                popup_24db4845b41be5d93c1e1ddf27c50bb9.setContent(html_7b62a511d67751a4ddfdd3fa8cef6aab);
+            
+        
+
+        marker_2208fb9ec2c31c87c01748cc24b65a55.bindPopup(popup_24db4845b41be5d93c1e1ddf27c50bb9)
+        ;
+
+        
+    
+    
+            var marker_1fd2aa854e86871e20d6148241f76b46 = L.marker(
+                [37.5731826109645, 126.991564601103],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_5ab91e66bff9e07f8dc1d38301a79a3f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1c44449a070afb9a8f4a93b6381a9e88 = $(`<div id="html_1c44449a070afb9a8f4a93b6381a9e88" style="width: 100.0%; height: 100.0%;">중앙정보처리학원: 서울특별시 종로구 돈화문로 52</div>`)[0];
+                popup_5ab91e66bff9e07f8dc1d38301a79a3f.setContent(html_1c44449a070afb9a8f4a93b6381a9e88);
+            
+        
+
+        marker_1fd2aa854e86871e20d6148241f76b46.bindPopup(popup_5ab91e66bff9e07f8dc1d38301a79a3f)
+        ;
+
+        
+    
+    
+            var marker_652f7188ab184b7e29c5de878cca560e = L.marker(
+                [37.5561993158556, 126.939277954266],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_39ddc8d2b7b061d79fc3eaef1ae23599 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2a52aca90ab828b6fcd5c66dfa617bac = $(`<div id="html_2a52aca90ab828b6fcd5c66dfa617bac" style="width: 100.0%; height: 100.0%;">SBS아카데미게임학원: 서울특별시 서대문구 신촌로 121</div>`)[0];
+                popup_39ddc8d2b7b061d79fc3eaef1ae23599.setContent(html_2a52aca90ab828b6fcd5c66dfa617bac);
+            
+        
+
+        marker_652f7188ab184b7e29c5de878cca560e.bindPopup(popup_39ddc8d2b7b061d79fc3eaef1ae23599)
+        ;
+
+        
+    
+    
+            var marker_a7822c056f46cb269387df5a38b392e2 = L.marker(
+                [37.4938391795651, 127.120465611819],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8ab6edea31747df63d1c6309a569cef7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c804631cd812b80071c7c82902f7276a = $(`<div id="html_c804631cd812b80071c7c82902f7276a" style="width: 100.0%; height: 100.0%;">이젠아카데미컴퓨터학원: 서울특별시 송파구 중대로 109</div>`)[0];
+                popup_8ab6edea31747df63d1c6309a569cef7.setContent(html_c804631cd812b80071c7c82902f7276a);
+            
+        
+
+        marker_a7822c056f46cb269387df5a38b392e2.bindPopup(popup_8ab6edea31747df63d1c6309a569cef7)
+        ;
+
+        
+    
+    
+            var marker_86f75383302f1caf690f1d8be1bf0317 = L.marker(
+                [37.6176819830724, 126.921935213681],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_438cb318612d8c8c419b4c428b2805de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f22bd737919ecc9f9dd4fba3d5082de1 = $(`<div id="html_f22bd737919ecc9f9dd4fba3d5082de1" style="width: 100.0%; height: 100.0%;">보광컴퓨터학원: 서울특별시 은평구 통일로 833</div>`)[0];
+                popup_438cb318612d8c8c419b4c428b2805de.setContent(html_f22bd737919ecc9f9dd4fba3d5082de1);
+            
+        
+
+        marker_86f75383302f1caf690f1d8be1bf0317.bindPopup(popup_438cb318612d8c8c419b4c428b2805de)
+        ;
+
+        
+    
+    
+            var marker_6f01732765c559eb23506f056ef94ebb = L.marker(
+                [37.4965346523069, 127.045194567212],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ac7fc62e86cfbd71b41f11528f6aa078 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be043d8781209eaa73d5e50d463f9284 = $(`<div id="html_be043d8781209eaa73d5e50d463f9284" style="width: 100.0%; height: 100.0%;">굿서비스아카데미: 서울특별시 강남구 언주로 321</div>`)[0];
+                popup_ac7fc62e86cfbd71b41f11528f6aa078.setContent(html_be043d8781209eaa73d5e50d463f9284);
+            
+        
+
+        marker_6f01732765c559eb23506f056ef94ebb.bindPopup(popup_ac7fc62e86cfbd71b41f11528f6aa078)
+        ;
+
+        
+    
+    
+            var marker_f81dec6913b90dde3d559904610a3575 = L.marker(
+                [37.447279187014, 126.902607270221],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8e78b7c7b73c2ce23e72df3a03d3344b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b060c0f321b53faeccad0b5a859dda71 = $(`<div id="html_b060c0f321b53faeccad0b5a859dda71" style="width: 100.0%; height: 100.0%;">뉴중앙컴퓨터학원: 서울특별시 금천구 시흥대로39길 8</div>`)[0];
+                popup_8e78b7c7b73c2ce23e72df3a03d3344b.setContent(html_b060c0f321b53faeccad0b5a859dda71);
+            
+        
+
+        marker_f81dec6913b90dde3d559904610a3575.bindPopup(popup_8e78b7c7b73c2ce23e72df3a03d3344b)
+        ;
+
+        
+    
+    
+            var marker_6631972ee424e07834560a95fd1ddc02 = L.marker(
+                [37.4767483935968, 126.885794171182],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_1e18055cdb143e7035f4fb6bf01c7918 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aeaffcb4635abb5ac2015eef2b2dbf5b = $(`<div id="html_aeaffcb4635abb5ac2015eef2b2dbf5b" style="width: 100.0%; height: 100.0%;">KG아이티뱅크구로점: 서울특별시 금천구 벚꽃로 244</div>`)[0];
+                popup_1e18055cdb143e7035f4fb6bf01c7918.setContent(html_aeaffcb4635abb5ac2015eef2b2dbf5b);
+            
+        
+
+        marker_6631972ee424e07834560a95fd1ddc02.bindPopup(popup_1e18055cdb143e7035f4fb6bf01c7918)
+        ;
+
+        
+    
+    
+            var marker_598a5e1942e41d397baf9673ddf52e10 = L.marker(
+                [37.4879134092596, 126.884949898351],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d9cbd67c2b363d6e9dc5484f07d0c25a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce4b60cd6f97c528c0dd56b8d1fd7424 = $(`<div id="html_ce4b60cd6f97c528c0dd56b8d1fd7424" style="width: 100.0%; height: 100.0%;">대원정보통신학원: 서울특별시 구로구 구로동로 104</div>`)[0];
+                popup_d9cbd67c2b363d6e9dc5484f07d0c25a.setContent(html_ce4b60cd6f97c528c0dd56b8d1fd7424);
+            
+        
+
+        marker_598a5e1942e41d397baf9673ddf52e10.bindPopup(popup_d9cbd67c2b363d6e9dc5484f07d0c25a)
+        ;
+
+        
+    
+    
+            var marker_5b6a57c4a070ecf6aa9a51915aa41f8f = L.marker(
+                [37.5574877601044, 126.923346339882],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3d3ec7829baaa4f508fbf40626bc68fe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7422df7d8836ac37c9d7fbd7375397a = $(`<div id="html_f7422df7d8836ac37c9d7fbd7375397a" style="width: 100.0%; height: 100.0%;">하우온라인게임스쿨: 서울특별시 마포구 월드컵북로2길 57</div>`)[0];
+                popup_3d3ec7829baaa4f508fbf40626bc68fe.setContent(html_f7422df7d8836ac37c9d7fbd7375397a);
+            
+        
+
+        marker_5b6a57c4a070ecf6aa9a51915aa41f8f.bindPopup(popup_3d3ec7829baaa4f508fbf40626bc68fe)
+        ;
+
+        
+    
+    
+            var marker_2903fae094eb12e3dfcbaff18bb43978 = L.marker(
+                [37.4988172355936, 127.028970436915],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c9294ee16161164745fd54b9de5e6216 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8b030a42d8a19e4fb9b3a9cd64b20ce = $(`<div id="html_e8b030a42d8a19e4fb9b3a9cd64b20ce" style="width: 100.0%; height: 100.0%;">SBS아카데미게임학원: 서울특별시 강남구 테헤란로 109</div>`)[0];
+                popup_c9294ee16161164745fd54b9de5e6216.setContent(html_e8b030a42d8a19e4fb9b3a9cd64b20ce);
+            
+        
+
+        marker_2903fae094eb12e3dfcbaff18bb43978.bindPopup(popup_c9294ee16161164745fd54b9de5e6216)
+        ;
+
+        
+    
+    
+            var marker_e8401a7810a6c18beea9e1f812e45dbf = L.marker(
+                [37.5064676750435, 127.116256957943],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_73004a88abec022d64fa17f4073bacf9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_043912b8bf8b26e26395789ed8092405 = $(`<div id="html_043912b8bf8b26e26395789ed8092405" style="width: 100.0%; height: 100.0%;">한양고시컴퓨터학원: 서울특별시 송파구 가락로28길 3</div>`)[0];
+                popup_73004a88abec022d64fa17f4073bacf9.setContent(html_043912b8bf8b26e26395789ed8092405);
+            
+        
+
+        marker_e8401a7810a6c18beea9e1f812e45dbf.bindPopup(popup_73004a88abec022d64fa17f4073bacf9)
+        ;
+
+        
+    
+    
+            var marker_4441c57dc4701de8c4ac4b3b1ef162d8 = L.marker(
+                [37.5346953850245, 127.071320751862],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_86a3326dbd61857f84171067ade7cffd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e27f7547a276ae277818f83f2fbe4295 = $(`<div id="html_e27f7547a276ae277818f83f2fbe4295" style="width: 100.0%; height: 100.0%;">오성컴퓨터학원: 서울특별시 광진구 뚝섬로 553</div>`)[0];
+                popup_86a3326dbd61857f84171067ade7cffd.setContent(html_e27f7547a276ae277818f83f2fbe4295);
+            
+        
+
+        marker_4441c57dc4701de8c4ac4b3b1ef162d8.bindPopup(popup_86a3326dbd61857f84171067ade7cffd)
+        ;
+
+        
+    
+    
+            var marker_5c664deb98ae1614a785f06e93266771 = L.marker(
+                [37.5625165074213, 126.973009434802],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_668953bd8730a46915d58c953fb1e058 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bb7e7602b44f8a28eccae7802adcb75 = $(`<div id="html_0bb7e7602b44f8a28eccae7802adcb75" style="width: 100.0%; height: 100.0%;">다산아카데미: 서울특별시 중구 서소문로 106</div>`)[0];
+                popup_668953bd8730a46915d58c953fb1e058.setContent(html_0bb7e7602b44f8a28eccae7802adcb75);
+            
+        
+
+        marker_5c664deb98ae1614a785f06e93266771.bindPopup(popup_668953bd8730a46915d58c953fb1e058)
+        ;
+
+        
+    
+    
+            var marker_4b68dfca7b3f8d690f45ee3bae66d080 = L.marker(
+                [37.6302947656133, 127.024237404907],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_4cef93348a371e7973b57efcff661225 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_760245cae75bdb089e341f57122cd95d = $(`<div id="html_760245cae75bdb089e341f57122cd95d" style="width: 100.0%; height: 100.0%;">예일컴퓨터학원: 서울특별시 강북구 도봉로 245</div>`)[0];
+                popup_4cef93348a371e7973b57efcff661225.setContent(html_760245cae75bdb089e341f57122cd95d);
+            
+        
+
+        marker_4b68dfca7b3f8d690f45ee3bae66d080.bindPopup(popup_4cef93348a371e7973b57efcff661225)
+        ;
+
+        
+    
+    
+            var marker_cede8e3f6d4141debc7e913359d882ac = L.marker(
+                [37.4921688826763, 126.973713352101],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b82696fa5e27c7ff8d1a2ccb0ffeaef6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e162f9d68aecba0185b24724c193402c = $(`<div id="html_e162f9d68aecba0185b24724c193402c" style="width: 100.0%; height: 100.0%;">아람컴퓨터학원: 서울특별시 동작구 동작대로29길 119</div>`)[0];
+                popup_b82696fa5e27c7ff8d1a2ccb0ffeaef6.setContent(html_e162f9d68aecba0185b24724c193402c);
+            
+        
+
+        marker_cede8e3f6d4141debc7e913359d882ac.bindPopup(popup_b82696fa5e27c7ff8d1a2ccb0ffeaef6)
+        ;
+
+        
+    
+    
+            var marker_a3f24c21ae9d29ffc79de35ae779b80d = L.marker(
+                [37.6004290499064, 127.100696236033],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_7a3bf9c8c7875bc61bd4b254f2f09471 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f92525c8b95c5c57d4f35a75b4d7c5c = $(`<div id="html_6f92525c8b95c5c57d4f35a75b4d7c5c" style="width: 100.0%; height: 100.0%;">금란정보처리학원: 서울특별시 중랑구 용마산로 554</div>`)[0];
+                popup_7a3bf9c8c7875bc61bd4b254f2f09471.setContent(html_6f92525c8b95c5c57d4f35a75b4d7c5c);
+            
+        
+
+        marker_a3f24c21ae9d29ffc79de35ae779b80d.bindPopup(popup_7a3bf9c8c7875bc61bd4b254f2f09471)
+        ;
+
+        
+    
+    
+            var marker_f8ae269faf53342242633c38d171c8ed = L.marker(
+                [37.4993084894467, 127.030637877307],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_76d8ea9f2db4e43cc56c7538d4507fc8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73ed9527cc6419ac5f9475354ba42cb7 = $(`<div id="html_73ed9527cc6419ac5f9475354ba42cb7" style="width: 100.0%; height: 100.0%;">그린컴퓨터아카데미: 서울특별시 강남구 테헤란로 119</div>`)[0];
+                popup_76d8ea9f2db4e43cc56c7538d4507fc8.setContent(html_73ed9527cc6419ac5f9475354ba42cb7);
+            
+        
+
+        marker_f8ae269faf53342242633c38d171c8ed.bindPopup(popup_76d8ea9f2db4e43cc56c7538d4507fc8)
+        ;
+
+        
+    
+    
+            var marker_e405dc9bf09edc40920f56ee7fa22733 = L.marker(
+                [37.5715353216512, 126.992809411498],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_92803c8110137e9e50332a66f0684142 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_370fada4be855ce6149b57b5cd4b8e84 = $(`<div id="html_370fada4be855ce6149b57b5cd4b8e84" style="width: 100.0%; height: 100.0%;">G&D.ZoomDesign: 서울특별시 종로구 돈화문로6가길 16</div>`)[0];
+                popup_92803c8110137e9e50332a66f0684142.setContent(html_370fada4be855ce6149b57b5cd4b8e84);
+            
+        
+
+        marker_e405dc9bf09edc40920f56ee7fa22733.bindPopup(popup_92803c8110137e9e50332a66f0684142)
+        ;
+
+        
+    
+    
+            var marker_6b3c10280f34971dd617caed69eb8fc6 = L.marker(
+                [37.5726051918638, 126.99994957203],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_e51146215f4bcb9ced0030e258ec8c90 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c04870ca8acb4b99c69f9e9e38a2665 = $(`<div id="html_8c04870ca8acb4b99c69f9e9e38a2665" style="width: 100.0%; height: 100.0%;">아이티뱅크멀티캠퍼스연지점: 서울특별시 종로구 종로31가길 15</div>`)[0];
+                popup_e51146215f4bcb9ced0030e258ec8c90.setContent(html_8c04870ca8acb4b99c69f9e9e38a2665);
+            
+        
+
+        marker_6b3c10280f34971dd617caed69eb8fc6.bindPopup(popup_e51146215f4bcb9ced0030e258ec8c90)
+        ;
+
+        
+    
+    
+            var marker_994245938bfc87cb4596434f66b4c731 = L.marker(
+                [37.4959617943363, 127.124794701061],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_706391c60af67d1c15bfee97d30fb1c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb2749b25995341abbaa9dbd9209f95f = $(`<div id="html_fb2749b25995341abbaa9dbd9209f95f" style="width: 100.0%; height: 100.0%;">프로카데미: 서울특별시 송파구 중대로 156</div>`)[0];
+                popup_706391c60af67d1c15bfee97d30fb1c1.setContent(html_fb2749b25995341abbaa9dbd9209f95f);
+            
+        
+
+        marker_994245938bfc87cb4596434f66b4c731.bindPopup(popup_706391c60af67d1c15bfee97d30fb1c1)
+        ;
+
+        
+    
+    
+            var marker_82d76b4c9a4961d784a2ac718a3fbe26 = L.marker(
+                [37.4821425820278, 126.898920360962],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_035e5a58d6a6a2d2b250750a12500d6b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d85a151f07a3c3ae404442adb80e822f = $(`<div id="html_d85a151f07a3c3ae404442adb80e822f" style="width: 100.0%; height: 100.0%;">한국it아카데미: 서울특별시 구로구 디지털로32가길 25</div>`)[0];
+                popup_035e5a58d6a6a2d2b250750a12500d6b.setContent(html_d85a151f07a3c3ae404442adb80e822f);
+            
+        
+
+        marker_82d76b4c9a4961d784a2ac718a3fbe26.bindPopup(popup_035e5a58d6a6a2d2b250750a12500d6b)
+        ;
+
+        
+    
+    
+            var marker_78b665422563856ed8b2f8e93ca815f0 = L.marker(
+                [37.5560084689833, 126.946139342743],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_19d87828a650c6bfb33c7c5f75c8cf5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8aa67a56cc15d8c88ae3fb936c69085c = $(`<div id="html_8aa67a56cc15d8c88ae3fb936c69085c" style="width: 100.0%; height: 100.0%;">새마포컴퓨터학원: 서울특별시 마포구 대흥로30길 6-8</div>`)[0];
+                popup_19d87828a650c6bfb33c7c5f75c8cf5d.setContent(html_8aa67a56cc15d8c88ae3fb936c69085c);
+            
+        
+
+        marker_78b665422563856ed8b2f8e93ca815f0.bindPopup(popup_19d87828a650c6bfb33c7c5f75c8cf5d)
+        ;
+
+        
+    
+    
+            var marker_f254f47e1f862f8ca95641749082c19e = L.marker(
+                [37.4942628904745, 127.018670631452],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8f0a578d70f6add530d091ebac14b010 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cd4d16f60c17c9f160a4d75b5b220f7 = $(`<div id="html_0cd4d16f60c17c9f160a4d75b5b220f7" style="width: 100.0%; height: 100.0%;">씨지앤아이게임그래픽학원: 서울특별시 서초구 서초중앙로22길 87</div>`)[0];
+                popup_8f0a578d70f6add530d091ebac14b010.setContent(html_0cd4d16f60c17c9f160a4d75b5b220f7);
+            
+        
+
+        marker_f254f47e1f862f8ca95641749082c19e.bindPopup(popup_8f0a578d70f6add530d091ebac14b010)
+        ;
+
+        
+    
+    
+            var marker_3974f6bfa7530e70221c71713ac2784b = L.marker(
+                [37.498048964004, 127.026492343657],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_910c0d27a90ad0386544e5d5f2dbe973 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_808f74809109ab44c80ea3e9b125f3e0 = $(`<div id="html_808f74809109ab44c80ea3e9b125f3e0" style="width: 100.0%; height: 100.0%;">에스씨에이아카데미: 서울특별시 서초구 서초대로77길 3</div>`)[0];
+                popup_910c0d27a90ad0386544e5d5f2dbe973.setContent(html_808f74809109ab44c80ea3e9b125f3e0);
+            
+        
+
+        marker_3974f6bfa7530e70221c71713ac2784b.bindPopup(popup_910c0d27a90ad0386544e5d5f2dbe973)
+        ;
+
+        
+    
+    
+            var marker_df2cc5549e1218e0093cf610cf3b5d29 = L.marker(
+                [37.5476808577819, 126.833791753497],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8a6401a9159a75806552fbcbcaaf287c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_865250b6f94848a500b9471f16db6942 = $(`<div id="html_865250b6f94848a500b9471f16db6942" style="width: 100.0%; height: 100.0%;">나래컴퓨터학원: 서울특별시 강서구 강서로45길 41</div>`)[0];
+                popup_8a6401a9159a75806552fbcbcaaf287c.setContent(html_865250b6f94848a500b9471f16db6942);
+            
+        
+
+        marker_df2cc5549e1218e0093cf610cf3b5d29.bindPopup(popup_8a6401a9159a75806552fbcbcaaf287c)
+        ;
+
+        
+    
+    
+            var marker_366b8e633cc29cf5e9019117cdfed66e = L.marker(
+                [37.5324683007847, 127.084982363978],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c03ae5caef9410070eb48ad52f6083e7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_14f741e064fb63c259a36e948b94a0ff = $(`<div id="html_14f741e064fb63c259a36e948b94a0ff" style="width: 100.0%; height: 100.0%;">푸른솔컴퓨터학원: 서울특별시 광진구 뚝섬로 681</div>`)[0];
+                popup_c03ae5caef9410070eb48ad52f6083e7.setContent(html_14f741e064fb63c259a36e948b94a0ff);
+            
+        
+
+        marker_366b8e633cc29cf5e9019117cdfed66e.bindPopup(popup_c03ae5caef9410070eb48ad52f6083e7)
+        ;
+
+        
+    
+    
+            var marker_aee56614710ff6a08da583f23ffaf11a = L.marker(
+                [37.4993084894467, 127.030637877307],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_18832cfed849025f56ce6edc415ad64c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4b5c299ab146faff6c75dc98b5fc904 = $(`<div id="html_b4b5c299ab146faff6c75dc98b5fc904" style="width: 100.0%; height: 100.0%;">그린컴퓨터아트학원그린IT아카데미: 서울특별시 강남구 테헤란로 119</div>`)[0];
+                popup_18832cfed849025f56ce6edc415ad64c.setContent(html_b4b5c299ab146faff6c75dc98b5fc904);
+            
+        
+
+        marker_aee56614710ff6a08da583f23ffaf11a.bindPopup(popup_18832cfed849025f56ce6edc415ad64c)
+        ;
+
+        
+    
+    
+            var marker_ad46ea0ee22960037260c8511d772760 = L.marker(
+                [37.561912352013, 127.087010683478],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_4f7e76c2dacc294bad6027f3608b3f7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0216dc20e954483cd1cf975075311c3c = $(`<div id="html_0216dc20e954483cd1cf975075311c3c" style="width: 100.0%; height: 100.0%;">한일컴퓨터학원: 서울특별시 광진구 용마산로 93</div>`)[0];
+                popup_4f7e76c2dacc294bad6027f3608b3f7a.setContent(html_0216dc20e954483cd1cf975075311c3c);
+            
+        
+
+        marker_ad46ea0ee22960037260c8511d772760.bindPopup(popup_4f7e76c2dacc294bad6027f3608b3f7a)
+        ;
+
+        
+    
+    
+            var marker_122860d519e95ebf2f926e9cc8a1b7eb = L.marker(
+                [37.5412640040111, 126.868834407254],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_0d6ec4f4e7f8ea844bf6e95b3048ffc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cf2dab1c63e41350b13a05b14e3d1e9 = $(`<div id="html_8cf2dab1c63e41350b13a05b14e3d1e9" style="width: 100.0%; height: 100.0%;">가람컴퓨터학원: 서울특별시 양천구 목동중앙본로 59</div>`)[0];
+                popup_0d6ec4f4e7f8ea844bf6e95b3048ffc6.setContent(html_8cf2dab1c63e41350b13a05b14e3d1e9);
+            
+        
+
+        marker_122860d519e95ebf2f926e9cc8a1b7eb.bindPopup(popup_0d6ec4f4e7f8ea844bf6e95b3048ffc6)
+        ;
+
+        
+    
+    
+            var marker_291e51f63fddb43e71212b85d9e7455d = L.marker(
+                [37.5032431696771, 127.11282275467],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_0cc4c86a26a490d115ff34cb314a7d1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98ee0bffd294391246817e60077679e0 = $(`<div id="html_98ee0bffd294391246817e60077679e0" style="width: 100.0%; height: 100.0%;">이찬진컴퓨터교실: 서울특별시 송파구 가락로 155</div>`)[0];
+                popup_0cc4c86a26a490d115ff34cb314a7d1e.setContent(html_98ee0bffd294391246817e60077679e0);
+            
+        
+
+        marker_291e51f63fddb43e71212b85d9e7455d.bindPopup(popup_0cc4c86a26a490d115ff34cb314a7d1e)
+        ;
+
+        
+    
+    
+            var marker_a97a6d72ec92583729992220dbb5eff6 = L.marker(
+                [37.5377338458191, 126.827463150916],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_9bb2f7bcc1414d89920e9c0852678dde = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56f36695a8262c4a4a5d11bcba6a35e7 = $(`<div id="html_56f36695a8262c4a4a5d11bcba6a35e7" style="width: 100.0%; height: 100.0%;">청솔컴퓨터그래픽학원: 서울특별시 양천구 남부순환로 327</div>`)[0];
+                popup_9bb2f7bcc1414d89920e9c0852678dde.setContent(html_56f36695a8262c4a4a5d11bcba6a35e7);
+            
+        
+
+        marker_a97a6d72ec92583729992220dbb5eff6.bindPopup(popup_9bb2f7bcc1414d89920e9c0852678dde)
+        ;
+
+        
+    
+    
+            var marker_0fbdc33fe5c973d11a5bcc0aef67357d = L.marker(
+                [37.4465131411007, 126.900652016875],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_950ba517668659cdf8a31e0bdda9ccfd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a092a4ef474cd5a64eff9216a65d106d = $(`<div id="html_a092a4ef474cd5a64eff9216a65d106d" style="width: 100.0%; height: 100.0%;">중앙컴퓨터학원: 서울특별시 금천구 시흥대로39길 45</div>`)[0];
+                popup_950ba517668659cdf8a31e0bdda9ccfd.setContent(html_a092a4ef474cd5a64eff9216a65d106d);
+            
+        
+
+        marker_0fbdc33fe5c973d11a5bcc0aef67357d.bindPopup(popup_950ba517668659cdf8a31e0bdda9ccfd)
+        ;
+
+        
+    
+    
+            var marker_7c76c23ad0bb21e8a5fbaf253f1a7a64 = L.marker(
+                [37.6134187273238, 126.930695625778],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_2cba3b81bbb404f24cd8e5a9ce9d5fde = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_05b57bfa3e781f83f1172486e4539c39 = $(`<div id="html_05b57bfa3e781f83f1172486e4539c39" style="width: 100.0%; height: 100.0%;">아이비씨에듀케이션: 서울특별시 은평구 불광로 51</div>`)[0];
+                popup_2cba3b81bbb404f24cd8e5a9ce9d5fde.setContent(html_05b57bfa3e781f83f1172486e4539c39);
+            
+        
+
+        marker_7c76c23ad0bb21e8a5fbaf253f1a7a64.bindPopup(popup_2cba3b81bbb404f24cd8e5a9ce9d5fde)
+        ;
+
+        
+    
+    
+            var marker_70fbb2f395abada2292ba5545a669ae8 = L.marker(
+                [37.5773451654175, 127.015011368557],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_534aafb6d51bb43cea28910bab2672f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f251cbfe70f42c1cdeca257a550d0ff = $(`<div id="html_4f251cbfe70f42c1cdeca257a550d0ff" style="width: 100.0%; height: 100.0%;">고려컴퓨터학원: 서울특별시 종로구 지봉로 81</div>`)[0];
+                popup_534aafb6d51bb43cea28910bab2672f6.setContent(html_4f251cbfe70f42c1cdeca257a550d0ff);
+            
+        
+
+        marker_70fbb2f395abada2292ba5545a669ae8.bindPopup(popup_534aafb6d51bb43cea28910bab2672f6)
+        ;
+
+        
+    
+    
+            var marker_777cecc38661274783ae54cfd791ec41 = L.marker(
+                [37.5262767290776, 126.889402256757],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_2c47073759c544e702ab23446f229863 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_663c9a9823644be8ceb9c59e1fa7958b = $(`<div id="html_663c9a9823644be8ceb9c59e1fa7958b" style="width: 100.0%; height: 100.0%;">이보영의토킹클럽: 서울특별시 영등포구 선유로 131</div>`)[0];
+                popup_2c47073759c544e702ab23446f229863.setContent(html_663c9a9823644be8ceb9c59e1fa7958b);
+            
+        
+
+        marker_777cecc38661274783ae54cfd791ec41.bindPopup(popup_2c47073759c544e702ab23446f229863)
+        ;
+
+        
+    
+    
+            var marker_9c0f14222957bb79e96196d18fa1ecfd = L.marker(
+                [37.5011684990822, 126.92685858308],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b3cd3603fa9b6514c7943cfc513c6735 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c22393ed9257b8c74a7ef379feb9dc1 = $(`<div id="html_6c22393ed9257b8c74a7ef379feb9dc1" style="width: 100.0%; height: 100.0%;">이찬진컴퓨터교실: 서울특별시 동작구 대방동3길 12</div>`)[0];
+                popup_b3cd3603fa9b6514c7943cfc513c6735.setContent(html_6c22393ed9257b8c74a7ef379feb9dc1);
+            
+        
+
+        marker_9c0f14222957bb79e96196d18fa1ecfd.bindPopup(popup_b3cd3603fa9b6514c7943cfc513c6735)
+        ;
+
+        
+    
+    
+            var marker_5e8328f73cb513362a83707b50bf1dd9 = L.marker(
+                [37.6758848088468, 127.052706764854],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_69de438aaa497432502038b38d4cdc3b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e99722cb5df39d4d137876749cf9599f = $(`<div id="html_e99722cb5df39d4d137876749cf9599f" style="width: 100.0%; height: 100.0%;">경희컴퓨터학원: 서울특별시 노원구 동일로237다길 52</div>`)[0];
+                popup_69de438aaa497432502038b38d4cdc3b.setContent(html_e99722cb5df39d4d137876749cf9599f);
+            
+        
+
+        marker_5e8328f73cb513362a83707b50bf1dd9.bindPopup(popup_69de438aaa497432502038b38d4cdc3b)
+        ;
+
+        
+    
+    
+            var marker_a285f63f9937cb249670bd4c332841ba = L.marker(
+                [37.6148449090178, 126.918125045827],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_437d441c67935f72c65e594b6b2af4c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a72cb0ce967da7b70d4a522833aedbc = $(`<div id="html_1a72cb0ce967da7b70d4a522833aedbc" style="width: 100.0%; height: 100.0%;">써니코딩컴퓨터교습소: 서울특별시 은평구 연서로 180</div>`)[0];
+                popup_437d441c67935f72c65e594b6b2af4c4.setContent(html_1a72cb0ce967da7b70d4a522833aedbc);
+            
+        
+
+        marker_a285f63f9937cb249670bd4c332841ba.bindPopup(popup_437d441c67935f72c65e594b6b2af4c4)
+        ;
+
+        
+    
+    
+            var marker_aabc92c9469f0fb31bd1e4a1ac8ed2c9 = L.marker(
+                [37.5433371082083, 126.838283954753],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_2f498b9785a545954eee2871b57b0f83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1bb3343765d467d78e2ef007158aba54 = $(`<div id="html_1bb3343765d467d78e2ef007158aba54" style="width: 100.0%; height: 100.0%;">나래컴퓨터회계학원: 서울특별시 강서구 강서로 193</div>`)[0];
+                popup_2f498b9785a545954eee2871b57b0f83.setContent(html_1bb3343765d467d78e2ef007158aba54);
+            
+        
+
+        marker_aabc92c9469f0fb31bd1e4a1ac8ed2c9.bindPopup(popup_2f498b9785a545954eee2871b57b0f83)
+        ;
+
+        
+    
+    
+            var marker_b8268f91958daa0a2034c91df04cf118 = L.marker(
+                [37.4776488288302, 126.881914126369],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_0850b115c2454922a51f510265baa640 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e840610a007eb9db6f981870a7933fdc = $(`<div id="html_e840610a007eb9db6f981870a7933fdc" style="width: 100.0%; height: 100.0%;">인섹시큐리티정보통신학원: 서울특별시 금천구 가산디지털1로 137</div>`)[0];
+                popup_0850b115c2454922a51f510265baa640.setContent(html_e840610a007eb9db6f981870a7933fdc);
+            
+        
+
+        marker_b8268f91958daa0a2034c91df04cf118.bindPopup(popup_0850b115c2454922a51f510265baa640)
+        ;
+
+        
+    
+    
+            var marker_2608f69dee8c2fa452f53ba2ba865e13 = L.marker(
+                [37.5901500806177, 127.097411628543],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_92180a7afcba3413243e64a44d9224ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aa9996852ec18eaa35e2e4b535dfedea = $(`<div id="html_aa9996852ec18eaa35e2e4b535dfedea" style="width: 100.0%; height: 100.0%;">으뜸컴퓨터학원: 서울특별시 중랑구 용마산로 436</div>`)[0];
+                popup_92180a7afcba3413243e64a44d9224ec.setContent(html_aa9996852ec18eaa35e2e4b535dfedea);
+            
+        
+
+        marker_2608f69dee8c2fa452f53ba2ba865e13.bindPopup(popup_92180a7afcba3413243e64a44d9224ec)
+        ;
+
+        
+    
+    
+            var marker_97e58662187c11fb10e752cbcefabb0e = L.marker(
+                [37.520880367468, 126.861110293514],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_cb25bb2900b49fe0639a8f32bc16d46b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_845822070845a37f1a80419ffbe2fd89 = $(`<div id="html_845822070845a37f1a80419ffbe2fd89" style="width: 100.0%; height: 100.0%;">혜윰컴퓨터교습소: 서울특별시 양천구 신월로38길 12</div>`)[0];
+                popup_cb25bb2900b49fe0639a8f32bc16d46b.setContent(html_845822070845a37f1a80419ffbe2fd89);
+            
+        
+
+        marker_97e58662187c11fb10e752cbcefabb0e.bindPopup(popup_cb25bb2900b49fe0639a8f32bc16d46b)
+        ;
+
+        
+    
+    
+            var marker_b0274bffc112619f23878ddf8c08028a = L.marker(
+                [37.5680067429191, 126.964059335309],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_7df4b4f6c3dee60c48119fcd98854193 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dca4125854ba9a2b102632f874d1e8d4 = $(`<div id="html_dca4125854ba9a2b102632f874d1e8d4" style="width: 100.0%; height: 100.0%;">국제컴퓨터학원: 서울특별시 서대문구 통일로 157-6</div>`)[0];
+                popup_7df4b4f6c3dee60c48119fcd98854193.setContent(html_dca4125854ba9a2b102632f874d1e8d4);
+            
+        
+
+        marker_b0274bffc112619f23878ddf8c08028a.bindPopup(popup_7df4b4f6c3dee60c48119fcd98854193)
+        ;
+
+        
+    
+    
+            var marker_6291147a86013748f886b3b7644cd12a = L.marker(
+                [37.4961075758899, 127.024900360643],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d11d29368fcc504d97e9515dc09887a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_244f7ced55d4012c63e7ff57e8031262 = $(`<div id="html_244f7ced55d4012c63e7ff57e8031262" style="width: 100.0%; height: 100.0%;">라이크코퍼레이션유니티러닝센터학원: 서울특별시 서초구 서운로 142-4</div>`)[0];
+                popup_d11d29368fcc504d97e9515dc09887a6.setContent(html_244f7ced55d4012c63e7ff57e8031262);
+            
+        
+
+        marker_6291147a86013748f886b3b7644cd12a.bindPopup(popup_d11d29368fcc504d97e9515dc09887a6)
+        ;
+
+        
+    
+    
+            var marker_529b082c6c7b20f899c83b8eebebeec9 = L.marker(
+                [37.5561993158556, 126.939277954266],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c090418ab9b37714693b8fefb2fda33b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_602676340f627e0798539d2b674864ad = $(`<div id="html_602676340f627e0798539d2b674864ad" style="width: 100.0%; height: 100.0%;">SBS게임아카데미신촌점: 서울특별시 서대문구 신촌로 121</div>`)[0];
+                popup_c090418ab9b37714693b8fefb2fda33b.setContent(html_602676340f627e0798539d2b674864ad);
+            
+        
+
+        marker_529b082c6c7b20f899c83b8eebebeec9.bindPopup(popup_c090418ab9b37714693b8fefb2fda33b)
+        ;
+
+        
+    
+    
+            var marker_e2caeb57f82150313cd98f183f4cfafc = L.marker(
+                [37.5326302081864, 126.844446651056],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_62ae3df321044c4f043538d79221a789 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d92708e0f22ec0fa70b668a8f1628ae9 = $(`<div id="html_d92708e0f22ec0fa70b668a8f1628ae9" style="width: 100.0%; height: 100.0%;">즐겨찾기정보기술학원: 서울특별시 강서구 강서로17길 25</div>`)[0];
+                popup_62ae3df321044c4f043538d79221a789.setContent(html_d92708e0f22ec0fa70b668a8f1628ae9);
+            
+        
+
+        marker_e2caeb57f82150313cd98f183f4cfafc.bindPopup(popup_62ae3df321044c4f043538d79221a789)
+        ;
+
+        
+    
+    
+            var marker_19f08d632b93de6318afd26038678c2c = L.marker(
+                [37.5382218002336, 127.127276965566],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_aa0c44b406f6d750eac55a8a17e1cf32 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd5fd880f98ed155a19609146e4b99ac = $(`<div id="html_dd5fd880f98ed155a19609146e4b99ac" style="width: 100.0%; height: 100.0%;">학원: 서울특별시 강동구 천호대로157길 14</div>`)[0];
+                popup_aa0c44b406f6d750eac55a8a17e1cf32.setContent(html_dd5fd880f98ed155a19609146e4b99ac);
+            
+        
+
+        marker_19f08d632b93de6318afd26038678c2c.bindPopup(popup_aa0c44b406f6d750eac55a8a17e1cf32)
+        ;
+
+        
+    
+    
+            var marker_66d05ade02134f7612fb62b1cb424a34 = L.marker(
+                [37.5560250894713, 126.938940885198],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_cd24e25526e4adc4b1cdf0b004bda7a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70eaa28efcf6db4c423b9a7394e230b7 = $(`<div id="html_70eaa28efcf6db4c423b9a7394e230b7" style="width: 100.0%; height: 100.0%;">서울경리학원: 서울특별시 서대문구 신촌로 117</div>`)[0];
+                popup_cd24e25526e4adc4b1cdf0b004bda7a5.setContent(html_70eaa28efcf6db4c423b9a7394e230b7);
+            
+        
+
+        marker_66d05ade02134f7612fb62b1cb424a34.bindPopup(popup_cd24e25526e4adc4b1cdf0b004bda7a5)
+        ;
+
+        
+    
+    
+            var marker_35ec5959a666d423f214c49a4b3c57ec = L.marker(
+                [37.5605761073596, 126.995684766568],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_bd2a0521d45178c110489218c58221fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1bc50a32c53e1cf4d5b6b34d78e070b = $(`<div id="html_a1bc50a32c53e1cf4d5b6b34d78e070b" style="width: 100.0%; height: 100.0%;">전자출판디티피학원: 서울특별시 중구 필동로 12</div>`)[0];
+                popup_bd2a0521d45178c110489218c58221fd.setContent(html_a1bc50a32c53e1cf4d5b6b34d78e070b);
+            
+        
+
+        marker_35ec5959a666d423f214c49a4b3c57ec.bindPopup(popup_bd2a0521d45178c110489218c58221fd)
+        ;
+
+        
+    
+    
+            var marker_c56e941d21b5cd75815e6d889d302c90 = L.marker(
+                [37.5242581752125, 126.875098484042],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_dc55e517667ac9bcc3beb3f511eb7823 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e179b281402fa03ffc8d26bce58e3737 = $(`<div id="html_e179b281402fa03ffc8d26bce58e3737" style="width: 100.0%; height: 100.0%;">153캐드캠학원: 서울특별시 양천구 오목로 336</div>`)[0];
+                popup_dc55e517667ac9bcc3beb3f511eb7823.setContent(html_e179b281402fa03ffc8d26bce58e3737);
+            
+        
+
+        marker_c56e941d21b5cd75815e6d889d302c90.bindPopup(popup_dc55e517667ac9bcc3beb3f511eb7823)
+        ;
+
+        
+    
+    
+            var marker_2a941be92593eb9428668e8dd1c1e0ed = L.marker(
+                [37.4946159615022, 127.027588622061],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ae1a4d8d5b4199791c027be30f869dc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6b5416f8e23be859f0457af2d532c58e = $(`<div id="html_6b5416f8e23be859f0457af2d532c58e" style="width: 100.0%; height: 100.0%;">비트스쿨: 서울특별시 서초구 서초대로74길 33</div>`)[0];
+                popup_ae1a4d8d5b4199791c027be30f869dc6.setContent(html_6b5416f8e23be859f0457af2d532c58e);
+            
+        
+
+        marker_2a941be92593eb9428668e8dd1c1e0ed.bindPopup(popup_ae1a4d8d5b4199791c027be30f869dc6)
+        ;
+
+        
+    
+    
+            var marker_7180503d0cc6ff1fd439222c14e34faa = L.marker(
+                [37.6226328708344, 127.073025951793],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_373784f87fc0479f49a26bc6b98b1aa5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87a2de96101b89dd432b0be0061ad8c6 = $(`<div id="html_87a2de96101b89dd432b0be0061ad8c6" style="width: 100.0%; height: 100.0%;">컴퓨터1191: 서울특별시 노원구 동일로179길 12-15</div>`)[0];
+                popup_373784f87fc0479f49a26bc6b98b1aa5.setContent(html_87a2de96101b89dd432b0be0061ad8c6);
+            
+        
+
+        marker_7180503d0cc6ff1fd439222c14e34faa.bindPopup(popup_373784f87fc0479f49a26bc6b98b1aa5)
+        ;
+
+        
+    
+    
+            var marker_55bfc833e92436e0dcda850b2c47aebe = L.marker(
+                [37.4952458647756, 126.85832196089],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_2fa5805e127f612f6eba082a8f40ad7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_becf06ff09d187f43ea1b56051966232 = $(`<div id="html_becf06ff09d187f43ea1b56051966232" style="width: 100.0%; height: 100.0%;">스타컴퓨터학원: 서울특별시 구로구 개봉로23가길 37</div>`)[0];
+                popup_2fa5805e127f612f6eba082a8f40ad7b.setContent(html_becf06ff09d187f43ea1b56051966232);
+            
+        
+
+        marker_55bfc833e92436e0dcda850b2c47aebe.bindPopup(popup_2fa5805e127f612f6eba082a8f40ad7b)
+        ;
+
+        
+    
+    
+            var marker_7b0ec285d9ff3df7e9efc45b67e7f30d = L.marker(
+                [37.5619808298096, 126.99240606373],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3d40cb61a4ce34f8744a653719fc1051 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73044a2c974dde95293805ddb6b2a0d2 = $(`<div id="html_73044a2c974dde95293805ddb6b2a0d2" style="width: 100.0%; height: 100.0%;">성심컴퓨터실무학원: 서울특별시 중구 퇴계로31길 18</div>`)[0];
+                popup_3d40cb61a4ce34f8744a653719fc1051.setContent(html_73044a2c974dde95293805ddb6b2a0d2);
+            
+        
+
+        marker_7b0ec285d9ff3df7e9efc45b67e7f30d.bindPopup(popup_3d40cb61a4ce34f8744a653719fc1051)
+        ;
+
+        
+    
+    
+            var marker_3a3092a4adb74dcc433ec78994aba566 = L.marker(
+                [37.5077250212328, 127.084945147077],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_5985856a50d438e106dded2556142037 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_181eed6055d0b3b08af9f9bcb368c9c4 = $(`<div id="html_181eed6055d0b3b08af9f9bcb368c9c4" style="width: 100.0%; height: 100.0%;">청진정보통신컴퓨터학원: 서울특별시 송파구 삼전로13길 49</div>`)[0];
+                popup_5985856a50d438e106dded2556142037.setContent(html_181eed6055d0b3b08af9f9bcb368c9c4);
+            
+        
+
+        marker_3a3092a4adb74dcc433ec78994aba566.bindPopup(popup_5985856a50d438e106dded2556142037)
+        ;
+
+        
+    
+    
+            var marker_6e1dc3e95c739bb1b9a87ef9ce8f3b6c = L.marker(
+                [37.5833551541152, 126.906534251014],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3b4142ff334e070fb294b63fe1d3f143 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c5b4bcd147639ed268dc2472b5888c13 = $(`<div id="html_c5b4bcd147639ed268dc2472b5888c13" style="width: 100.0%; height: 100.0%;">동원컴퓨터학원: 서울특별시 은평구 증산서길 78</div>`)[0];
+                popup_3b4142ff334e070fb294b63fe1d3f143.setContent(html_c5b4bcd147639ed268dc2472b5888c13);
+            
+        
+
+        marker_6e1dc3e95c739bb1b9a87ef9ce8f3b6c.bindPopup(popup_3b4142ff334e070fb294b63fe1d3f143)
+        ;
+
+        
+    
+    
+            var marker_20ff2eb07314207462324fe30836d0a6 = L.marker(
+                [37.6543174710006, 127.062149199416],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_fa565de9cd45c3b96459fccf0da8e864 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_923b08ec3eddbaf053e778f59208f833 = $(`<div id="html_923b08ec3eddbaf053e778f59208f833" style="width: 100.0%; height: 100.0%;">모드컴퓨터아트스쿨: 서울특별시 노원구 노해로 488</div>`)[0];
+                popup_fa565de9cd45c3b96459fccf0da8e864.setContent(html_923b08ec3eddbaf053e778f59208f833);
+            
+        
+
+        marker_20ff2eb07314207462324fe30836d0a6.bindPopup(popup_fa565de9cd45c3b96459fccf0da8e864)
+        ;
+
+        
+    
+    
+            var marker_d9d178cda69b9dab45dc90151eb92d1b = L.marker(
+                [37.5305816242301, 126.996901712854],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_35cb5c258e99e196bf5cd36f5aa3234f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_286f08cd54241fd503b61df13b7923ca = $(`<div id="html_286f08cd54241fd503b61df13b7923ca" style="width: 100.0%; height: 100.0%;">화인컴퓨터학원: 서울특별시 용산구 우사단로 2-1</div>`)[0];
+                popup_35cb5c258e99e196bf5cd36f5aa3234f.setContent(html_286f08cd54241fd503b61df13b7923ca);
+            
+        
+
+        marker_d9d178cda69b9dab45dc90151eb92d1b.bindPopup(popup_35cb5c258e99e196bf5cd36f5aa3234f)
+        ;
+
+        
+    
+    
+            var marker_f4c72dfa5bd7ccc674ad3c7ef4c39720 = L.marker(
+                [37.569700259994, 126.990004104293],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8d48cd3d64363e2529f6a7ac9833ff4a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc95145c5007f454ac8d4572d6628c90 = $(`<div id="html_bc95145c5007f454ac8d4572d6628c90" style="width: 100.0%; height: 100.0%;">그린컴퓨터아트학원: 서울특별시 종로구 수표로 96</div>`)[0];
+                popup_8d48cd3d64363e2529f6a7ac9833ff4a.setContent(html_bc95145c5007f454ac8d4572d6628c90);
+            
+        
+
+        marker_f4c72dfa5bd7ccc674ad3c7ef4c39720.bindPopup(popup_8d48cd3d64363e2529f6a7ac9833ff4a)
+        ;
+
+        
+    
+    
+            var marker_fb03acef189f1663e44df49b2144097c = L.marker(
+                [37.4962303665285, 127.028868224922],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_e0aec71b319995a03a48b7d5a8979c06 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_13827ada6e055c025d157f79357e3ea8 = $(`<div id="html_13827ada6e055c025d157f79357e3ea8" style="width: 100.0%; height: 100.0%;">더조은컴퓨터아카데미: 서울특별시 강남구 강남대로 374</div>`)[0];
+                popup_e0aec71b319995a03a48b7d5a8979c06.setContent(html_13827ada6e055c025d157f79357e3ea8);
+            
+        
+
+        marker_fb03acef189f1663e44df49b2144097c.bindPopup(popup_e0aec71b319995a03a48b7d5a8979c06)
+        ;
+
+        
+    
+    
+            var marker_96a1c746308a29d7b0df2e5fb8c8f820 = L.marker(
+                [37.4939528694867, 127.142052679295],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ac6d0f7d3d5167108c249232171c308d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02e24295a587ed72ac4a1eff02557313 = $(`<div id="html_02e24295a587ed72ac4a1eff02557313" style="width: 100.0%; height: 100.0%;">고려아트컴퓨터학원: 서울특별시 송파구 오금로 478</div>`)[0];
+                popup_ac6d0f7d3d5167108c249232171c308d.setContent(html_02e24295a587ed72ac4a1eff02557313);
+            
+        
+
+        marker_96a1c746308a29d7b0df2e5fb8c8f820.bindPopup(popup_ac6d0f7d3d5167108c249232171c308d)
+        ;
+
+        
+    
+    
+            var marker_3c1d93ea5220cd57b53bbb12cb0abef0 = L.marker(
+                [37.4941198096952, 126.856484504916],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_39620eeb8ab7513a7a6728704257cc75 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a80c83adab0f8ffc1dddc04d74bfd98 = $(`<div id="html_5a80c83adab0f8ffc1dddc04d74bfd98" style="width: 100.0%; height: 100.0%;">사람과잡구로평생교육원: 서울특별시 구로구 남부순환로95길 34</div>`)[0];
+                popup_39620eeb8ab7513a7a6728704257cc75.setContent(html_5a80c83adab0f8ffc1dddc04d74bfd98);
+            
+        
+
+        marker_3c1d93ea5220cd57b53bbb12cb0abef0.bindPopup(popup_39620eeb8ab7513a7a6728704257cc75)
+        ;
+
+        
+    
+    
+            var marker_1c841b1dc9b5bd9e74dc7fa512924a06 = L.marker(
+                [37.5001405696044, 127.112429697007],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_755488991ecdb7a8dbfc00232ebd0806 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7fa106522a5996c8c596798f8eb04de = $(`<div id="html_e7fa106522a5996c8c596798f8eb04de" style="width: 100.0%; height: 100.0%;">송파컴퓨터회계학원: 서울특별시 송파구 송파대로38길 2-9</div>`)[0];
+                popup_755488991ecdb7a8dbfc00232ebd0806.setContent(html_e7fa106522a5996c8c596798f8eb04de);
+            
+        
+
+        marker_1c841b1dc9b5bd9e74dc7fa512924a06.bindPopup(popup_755488991ecdb7a8dbfc00232ebd0806)
+        ;
+
+        
+    
+    
+            var marker_d1e194b4ac64ea196864d787dad599cf = L.marker(
+                [37.5751072397657, 126.990089572592],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_9189e72f6c8e6701872606445c85e85f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ceb95e4818f44adce33de999925d0523 = $(`<div id="html_ceb95e4818f44adce33de999925d0523" style="width: 100.0%; height: 100.0%;">이찬진컴퓨터교실: 서울특별시 종로구 돈화문로11가길 59</div>`)[0];
+                popup_9189e72f6c8e6701872606445c85e85f.setContent(html_ceb95e4818f44adce33de999925d0523);
+            
+        
+
+        marker_d1e194b4ac64ea196864d787dad599cf.bindPopup(popup_9189e72f6c8e6701872606445c85e85f)
+        ;
+
+        
+    
+    
+            var marker_7967886687d41bd635aa312c98c52ff2 = L.marker(
+                [37.5503253655862, 127.143602479745],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ffae61508447d7c162b5027d295dfda8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9fa70d68ec3896e72b139ee8663898fd = $(`<div id="html_9fa70d68ec3896e72b139ee8663898fd" style="width: 100.0%; height: 100.0%;">현대컴퓨터학원: 서울특별시 강동구 양재대로 1621</div>`)[0];
+                popup_ffae61508447d7c162b5027d295dfda8.setContent(html_9fa70d68ec3896e72b139ee8663898fd);
+            
+        
+
+        marker_7967886687d41bd635aa312c98c52ff2.bindPopup(popup_ffae61508447d7c162b5027d295dfda8)
+        ;
+
+        
+    
+    
+            var marker_7edb990b6c5e081b494e178bbfd7a0a2 = L.marker(
+                [37.5412253863372, 127.047238892517],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3e9d84ad2c04e88accc1c7d2caa96c0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f71628b69601820b9c581862fa14abb = $(`<div id="html_6f71628b69601820b9c581862fa14abb" style="width: 100.0%; height: 100.0%;">유림컴퓨터학원: 서울특별시 성동구 뚝섬로 325-1</div>`)[0];
+                popup_3e9d84ad2c04e88accc1c7d2caa96c0b.setContent(html_6f71628b69601820b9c581862fa14abb);
+            
+        
+
+        marker_7edb990b6c5e081b494e178bbfd7a0a2.bindPopup(popup_3e9d84ad2c04e88accc1c7d2caa96c0b)
+        ;
+
+        
+    
+    
+            var marker_520a72968895c20059dd5c5b25a7e091 = L.marker(
+                [37.6490966776253, 127.061670910525],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d045d4fcaa9c213da3f3701295c40011 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88b212605046144fd9f348eb82354d8d = $(`<div id="html_88b212605046144fd9f348eb82354d8d" style="width: 100.0%; height: 100.0%;">은곡직업전문학원: 서울특별시 노원구 동일로 1351</div>`)[0];
+                popup_d045d4fcaa9c213da3f3701295c40011.setContent(html_88b212605046144fd9f348eb82354d8d);
+            
+        
+
+        marker_520a72968895c20059dd5c5b25a7e091.bindPopup(popup_d045d4fcaa9c213da3f3701295c40011)
+        ;
+
+        
+    
+    
+            var marker_13f82a82313244b9586a8ea52b217265 = L.marker(
+                [37.5075095572216, 127.0838845661],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ba475cb3a31c46813ed17d4504355641 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3aa9b2e678c9a139c4f99207974bba4 = $(`<div id="html_e3aa9b2e678c9a139c4f99207974bba4" style="width: 100.0%; height: 100.0%;">청진컴퓨터교습소: 서울특별시 송파구 올림픽로12길 45</div>`)[0];
+                popup_ba475cb3a31c46813ed17d4504355641.setContent(html_e3aa9b2e678c9a139c4f99207974bba4);
+            
+        
+
+        marker_13f82a82313244b9586a8ea52b217265.bindPopup(popup_ba475cb3a31c46813ed17d4504355641)
+        ;
+
+        
+    
+    
+            var marker_2d09925511348c97bb6ce2818f45d32f = L.marker(
+                [37.5726051918638, 126.99994957203],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ceccafa20cf385b8c7f0708d9daa3a04 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4855ed1c7014f1309f569376c7f33168 = $(`<div id="html_4855ed1c7014f1309f569376c7f33168" style="width: 100.0%; height: 100.0%;">IT뱅크멀티캠퍼스: 서울특별시 종로구 종로31가길 15</div>`)[0];
+                popup_ceccafa20cf385b8c7f0708d9daa3a04.setContent(html_4855ed1c7014f1309f569376c7f33168);
+            
+        
+
+        marker_2d09925511348c97bb6ce2818f45d32f.bindPopup(popup_ceccafa20cf385b8c7f0708d9daa3a04)
+        ;
+
+        
+    
+    
+            var marker_6276d08cb42575ca2e5310c766d21c19 = L.marker(
+                [37.5385973487808, 126.9549275206],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3675aafcdf140bccc1187d24ba71f7a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2200495e86f0dda9b4ac8ca40c1c4b53 = $(`<div id="html_2200495e86f0dda9b4ac8ca40c1c4b53" style="width: 100.0%; height: 100.0%;">오성컴퓨터학원: 서울특별시 용산구 새창로 70</div>`)[0];
+                popup_3675aafcdf140bccc1187d24ba71f7a3.setContent(html_2200495e86f0dda9b4ac8ca40c1c4b53);
+            
+        
+
+        marker_6276d08cb42575ca2e5310c766d21c19.bindPopup(popup_3675aafcdf140bccc1187d24ba71f7a3)
+        ;
+
+        
+    
+    
+            var marker_cf6bfbebe6324139d4d1272135908932 = L.marker(
+                [37.5053070686077, 126.913362735453],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_2f75e9645f11288eb6e847c79bc9dca9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bdbccc064c6e9acae7ba7b1ae0bf1dc5 = $(`<div id="html_bdbccc064c6e9acae7ba7b1ae0bf1dc5" style="width: 100.0%; height: 100.0%;">신길소마사고력수학학원: 서울특별시 영등포구 가마산로 511</div>`)[0];
+                popup_2f75e9645f11288eb6e847c79bc9dca9.setContent(html_bdbccc064c6e9acae7ba7b1ae0bf1dc5);
+            
+        
+
+        marker_cf6bfbebe6324139d4d1272135908932.bindPopup(popup_2f75e9645f11288eb6e847c79bc9dca9)
+        ;
+
+        
+    
+    
+            var marker_218b7b04f4f346de5e75a836c605d10b = L.marker(
+                [37.4852841052855, 127.115104425717],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_6c110b9260ac281693ba1d4d2bf1dfd7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0e8406af7448c26c08ca6e47115cdd8d = $(`<div id="html_0e8406af7448c26c08ca6e47115cdd8d" style="width: 100.0%; height: 100.0%;">비즈온: 서울특별시 송파구 정의로7길 13</div>`)[0];
+                popup_6c110b9260ac281693ba1d4d2bf1dfd7.setContent(html_0e8406af7448c26c08ca6e47115cdd8d);
+            
+        
+
+        marker_218b7b04f4f346de5e75a836c605d10b.bindPopup(popup_6c110b9260ac281693ba1d4d2bf1dfd7)
+        ;
+
+        
+    
+    
+            var marker_6a955cc542f1914df54fe97699c146aa = L.marker(
+                [37.5011573177027, 127.112236704606],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_61242af0de5aec4db0b2cca800b70099 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_27c113a0543144739eee11df1710e434 = $(`<div id="html_27c113a0543144739eee11df1710e434" style="width: 100.0%; height: 100.0%;">동양컴퓨터학원: 서울특별시 송파구 송파대로38길 9</div>`)[0];
+                popup_61242af0de5aec4db0b2cca800b70099.setContent(html_27c113a0543144739eee11df1710e434);
+            
+        
+
+        marker_6a955cc542f1914df54fe97699c146aa.bindPopup(popup_61242af0de5aec4db0b2cca800b70099)
+        ;
+
+        
+    
+    
+            var marker_b5d23e91cd521ee25ca61845a47448d2 = L.marker(
+                [37.4998982418788, 126.929862462695],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_e1b1c15e003ebc56dbe26f318707d713 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7b8923aaffcedf71e5d7a765c516c47a = $(`<div id="html_7b8923aaffcedf71e5d7a765c516c47a" style="width: 100.0%; height: 100.0%;">문성컴퓨터학원: 서울특별시 동작구 상도로 83</div>`)[0];
+                popup_e1b1c15e003ebc56dbe26f318707d713.setContent(html_7b8923aaffcedf71e5d7a765c516c47a);
+            
+        
+
+        marker_b5d23e91cd521ee25ca61845a47448d2.bindPopup(popup_e1b1c15e003ebc56dbe26f318707d713)
+        ;
+
+        
+    
+    
+            var marker_8a1adb8a90770a42f61789583287903d = L.marker(
+                [37.5670837012694, 126.818751290008],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_4cbc27fd6a1f203954a136de7edea911 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eaa61ed411e05345b3bda64157f758a0 = $(`<div id="html_eaa61ed411e05345b3bda64157f758a0" style="width: 100.0%; height: 100.0%;">코링코링: 서울특별시 강서구 마곡중앙5로 81</div>`)[0];
+                popup_4cbc27fd6a1f203954a136de7edea911.setContent(html_eaa61ed411e05345b3bda64157f758a0);
+            
+        
+
+        marker_8a1adb8a90770a42f61789583287903d.bindPopup(popup_4cbc27fd6a1f203954a136de7edea911)
+        ;
+
+        
+    
+    
+            var marker_ed97f0887f5a4434336ce4a7ef3e2829 = L.marker(
+                [37.5576701880761, 127.08957511667],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_70bb738dc5d7965000c9f2b6782be6f8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3221ab25c418fdbeacafea25956e4b1f = $(`<div id="html_3221ab25c418fdbeacafea25956e4b1f" style="width: 100.0%; height: 100.0%;">한가람컴퓨터학원: 서울특별시 광진구 영화사로 19</div>`)[0];
+                popup_70bb738dc5d7965000c9f2b6782be6f8.setContent(html_3221ab25c418fdbeacafea25956e4b1f);
+            
+        
+
+        marker_ed97f0887f5a4434336ce4a7ef3e2829.bindPopup(popup_70bb738dc5d7965000c9f2b6782be6f8)
+        ;
+
+        
+    
+    
+            var marker_e8d06bf692d29f58f51588d27d863866 = L.marker(
+                [37.576164074924, 127.025781953261],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_657d7a30bc876664bfd21f16ddaabaef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fdfb170c65856580e2dd0ee3d67bf15f = $(`<div id="html_fdfb170c65856580e2dd0ee3d67bf15f" style="width: 100.0%; height: 100.0%;">아이티뱅크멀티캠퍼스동대문점: 서울특별시 동대문구 왕산로 20</div>`)[0];
+                popup_657d7a30bc876664bfd21f16ddaabaef.setContent(html_fdfb170c65856580e2dd0ee3d67bf15f);
+            
+        
+
+        marker_e8d06bf692d29f58f51588d27d863866.bindPopup(popup_657d7a30bc876664bfd21f16ddaabaef)
+        ;
+
+        
+    
+    
+            var marker_62cd7a10b4c8b4e8f6563fcf0df29d09 = L.marker(
+                [37.5770611686605, 127.057481044364],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_fd11d13a497679e78eb2152344a10ba3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d493ddd6bfccbd2fdcf385c218c0c8db = $(`<div id="html_d493ddd6bfccbd2fdcf385c218c0c8db" style="width: 100.0%; height: 100.0%;">덕수컴퓨터학원: 서울특별시 동대문구 전농로 135</div>`)[0];
+                popup_fd11d13a497679e78eb2152344a10ba3.setContent(html_d493ddd6bfccbd2fdcf385c218c0c8db);
+            
+        
+
+        marker_62cd7a10b4c8b4e8f6563fcf0df29d09.bindPopup(popup_fd11d13a497679e78eb2152344a10ba3)
+        ;
+
+        
+    
+    
+            var marker_ec354241fade9668f49cf3969113cd2e = L.marker(
+                [37.4997877120359, 127.103883808345],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_cf53845a25dd28bbacd98fc90df0898b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e44de0f054610f9aeb60b91484ba3212 = $(`<div id="html_e44de0f054610f9aeb60b91484ba3212" style="width: 100.0%; height: 100.0%;">제6세대컴퓨터학원: 서울특별시 송파구 가락로 68</div>`)[0];
+                popup_cf53845a25dd28bbacd98fc90df0898b.setContent(html_e44de0f054610f9aeb60b91484ba3212);
+            
+        
+
+        marker_ec354241fade9668f49cf3969113cd2e.bindPopup(popup_cf53845a25dd28bbacd98fc90df0898b)
+        ;
+
+        
+    
+    
+            var marker_497ffe66ee8949c0ba11e886e22142c5 = L.marker(
+                [37.5053009469433, 127.083753209566],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3016ea9372042dc48500d7feef4e0420 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c245e6cbcf19a3952dbffe0970fef68 = $(`<div id="html_7c245e6cbcf19a3952dbffe0970fef68" style="width: 100.0%; height: 100.0%;">명문올림피아드정보처리학원: 서울특별시 송파구 백제고분로 154</div>`)[0];
+                popup_3016ea9372042dc48500d7feef4e0420.setContent(html_7c245e6cbcf19a3952dbffe0970fef68);
+            
+        
+
+        marker_497ffe66ee8949c0ba11e886e22142c5.bindPopup(popup_3016ea9372042dc48500d7feef4e0420)
+        ;
+
+        
+    
+    
+            var marker_c66127fe2f91fbf66a1672d187396d12 = L.marker(
+                [37.6041446422544, 127.015314973526],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_db0a5faf5ddf5f1f85f36510f4651ece = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a95403aa684e13a127072ffd60ebaa58 = $(`<div id="html_a95403aa684e13a127072ffd60ebaa58" style="width: 100.0%; height: 100.0%;">제일컴퓨터학원: 서울특별시 성북구 정릉로31나길 8</div>`)[0];
+                popup_db0a5faf5ddf5f1f85f36510f4651ece.setContent(html_a95403aa684e13a127072ffd60ebaa58);
+            
+        
+
+        marker_c66127fe2f91fbf66a1672d187396d12.bindPopup(popup_db0a5faf5ddf5f1f85f36510f4651ece)
+        ;
+
+        
+    
+    
+            var marker_98fc252998d85be10194045cf401ac9b = L.marker(
+                [37.653049299321, 127.061303857893],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_f49579f939a734a5344150940d2b48a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46fedb4d7eb90ca17e96cdf8c78b5f98 = $(`<div id="html_46fedb4d7eb90ca17e96cdf8c78b5f98" style="width: 100.0%; height: 100.0%;">이젠컴퓨터아카데미: 서울특별시 노원구 동일로 1392</div>`)[0];
+                popup_f49579f939a734a5344150940d2b48a3.setContent(html_46fedb4d7eb90ca17e96cdf8c78b5f98);
+            
+        
+
+        marker_98fc252998d85be10194045cf401ac9b.bindPopup(popup_f49579f939a734a5344150940d2b48a3)
+        ;
+
+        
+    
+    
+            var marker_011303a3f531654729bec84bca4436ab = L.marker(
+                [37.5597782467549, 127.036170776645],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b3f575cbb2d860afb5574b3527b3ab6b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf2e4e06182ae82758a5a59360b8c7ae = $(`<div id="html_cf2e4e06182ae82758a5a59360b8c7ae" style="width: 100.0%; height: 100.0%;">학원: 서울특별시 성동구 왕십리로 287</div>`)[0];
+                popup_b3f575cbb2d860afb5574b3527b3ab6b.setContent(html_cf2e4e06182ae82758a5a59360b8c7ae);
+            
+        
+
+        marker_011303a3f531654729bec84bca4436ab.bindPopup(popup_b3f575cbb2d860afb5574b3527b3ab6b)
+        ;
+
+        
+    
+    
+            var marker_3d5616efc28af46eaa6b2e644f019b36 = L.marker(
+                [37.4894131914722, 127.009789478891],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_f05f1db027e4014083a1b384dfed0916 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3cec8c04482e22c0ac9129a637ec2961 = $(`<div id="html_3cec8c04482e22c0ac9129a637ec2961" style="width: 100.0%; height: 100.0%;">Parkcom: 서울특별시 서초구 반포대로24길 12</div>`)[0];
+                popup_f05f1db027e4014083a1b384dfed0916.setContent(html_3cec8c04482e22c0ac9129a637ec2961);
+            
+        
+
+        marker_3d5616efc28af46eaa6b2e644f019b36.bindPopup(popup_f05f1db027e4014083a1b384dfed0916)
+        ;
+
+        
+    
+    
+            var marker_17c00b7f23a7617eb2ff20a373effa75 = L.marker(
+                [37.620379622381, 127.028150491206],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3ebbafe14f1dc03b3b6d1f2309c954b8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0820cfa863ca349ece7adfbe189dcbd9 = $(`<div id="html_0820cfa863ca349ece7adfbe189dcbd9" style="width: 100.0%; height: 100.0%;">예우컴퓨터학원: 서울특별시 강북구 도봉로 129</div>`)[0];
+                popup_3ebbafe14f1dc03b3b6d1f2309c954b8.setContent(html_0820cfa863ca349ece7adfbe189dcbd9);
+            
+        
+
+        marker_17c00b7f23a7617eb2ff20a373effa75.bindPopup(popup_3ebbafe14f1dc03b3b6d1f2309c954b8)
+        ;
+
+        
+    
+    
+            var marker_992114cbb6b5cc58994ec6c9ca47a512 = L.marker(
+                [37.5021190957568, 127.065209871383],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_530e783536602d6846f1466c2d608ff5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bed1994d6465fe17abae670d027cfdc5 = $(`<div id="html_bed1994d6465fe17abae670d027cfdc5" style="width: 100.0%; height: 100.0%;">한빛컴퓨터학원: 서울특별시 강남구 영동대로65길 16</div>`)[0];
+                popup_530e783536602d6846f1466c2d608ff5.setContent(html_bed1994d6465fe17abae670d027cfdc5);
+            
+        
+
+        marker_992114cbb6b5cc58994ec6c9ca47a512.bindPopup(popup_530e783536602d6846f1466c2d608ff5)
+        ;
+
+        
+    
+    
+            var marker_38895b5ae24178d8b001b673f436e411 = L.marker(
+                [37.609418830386, 127.029833487886],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_978d6411994505af9579ac5a8ec263cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbf5ce012aac845b0aa49cdd05642cdd = $(`<div id="html_bbf5ce012aac845b0aa49cdd05642cdd" style="width: 100.0%; height: 100.0%;">대양컴퓨터학원: 서울특별시 성북구 도봉로 3</div>`)[0];
+                popup_978d6411994505af9579ac5a8ec263cc.setContent(html_bbf5ce012aac845b0aa49cdd05642cdd);
+            
+        
+
+        marker_38895b5ae24178d8b001b673f436e411.bindPopup(popup_978d6411994505af9579ac5a8ec263cc)
+        ;
+
+        
+    
+    
+            var marker_2f421ba57986ee8c18c1cb47a1d02980 = L.marker(
+                [37.5669853952399, 126.817032279204],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_f8e5695de66682da92510d1700a4a472 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1a979a79e9cde3a1bd0645fc4d653e6 = $(`<div id="html_c1a979a79e9cde3a1bd0645fc4d653e6" style="width: 100.0%; height: 100.0%;">뮤아센미술학원: 서울특별시 강서구 방화대로 294</div>`)[0];
+                popup_f8e5695de66682da92510d1700a4a472.setContent(html_c1a979a79e9cde3a1bd0645fc4d653e6);
+            
+        
+
+        marker_2f421ba57986ee8c18c1cb47a1d02980.bindPopup(popup_f8e5695de66682da92510d1700a4a472)
+        ;
+
+        
+    
+    
+            var marker_0ffd38b411ae3677474548966f72908f = L.marker(
+                [37.5326302081864, 126.844446651056],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_dcff22a50f3a534c5d94b42266558ba3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c537af58189e97e49f06f056b19abbe5 = $(`<div id="html_c537af58189e97e49f06f056b19abbe5" style="width: 100.0%; height: 100.0%;">즐겨찾기컴퓨터학원: 서울특별시 강서구 강서로17길 25</div>`)[0];
+                popup_dcff22a50f3a534c5d94b42266558ba3.setContent(html_c537af58189e97e49f06f056b19abbe5);
+            
+        
+
+        marker_0ffd38b411ae3677474548966f72908f.bindPopup(popup_dcff22a50f3a534c5d94b42266558ba3)
+        ;
+
+        
+    
+    
+            var marker_d70ff68ffbfb45e7294950d131228ff7 = L.marker(
+                [37.498762305437, 127.026675342451],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_176d6ed278a16e19e61aed597b733a36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7af06c4fce1cc7daa4a665bc10db0039 = $(`<div id="html_7af06c4fce1cc7daa4a665bc10db0039" style="width: 100.0%; height: 100.0%;">하이미디어컴퓨터학원: 서울특별시 서초구 강남대로 405</div>`)[0];
+                popup_176d6ed278a16e19e61aed597b733a36.setContent(html_7af06c4fce1cc7daa4a665bc10db0039);
+            
+        
+
+        marker_d70ff68ffbfb45e7294950d131228ff7.bindPopup(popup_176d6ed278a16e19e61aed597b733a36)
+        ;
+
+        
+    
+    
+            var marker_1f783e3f46eb204fbb082e2f860d8dce = L.marker(
+                [37.5020572122388, 127.024133087172],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_e103083525e72f01da573d8a0a13b77d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c650522de0e3a54f8062346b5c52300 = $(`<div id="html_6c650522de0e3a54f8062346b5c52300" style="width: 100.0%; height: 100.0%;">국제컴퓨터학원: 서울특별시 서초구 서초대로73길 54</div>`)[0];
+                popup_e103083525e72f01da573d8a0a13b77d.setContent(html_6c650522de0e3a54f8062346b5c52300);
+            
+        
+
+        marker_1f783e3f46eb204fbb082e2f860d8dce.bindPopup(popup_e103083525e72f01da573d8a0a13b77d)
+        ;
+
+        
+    
+    
+            var marker_d74fac138364d4ed579a5c480edb8947 = L.marker(
+                [37.5312650757085, 126.856008122518],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_72602772e31eca6d36c4ccc13cd780ef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7cd9167bb1c130268cafef8eee9747c8 = $(`<div id="html_7cd9167bb1c130268cafef8eee9747c8" style="width: 100.0%; height: 100.0%;">강서컴퓨터디자인학원: 서울특별시 강서구 곰달래로 208</div>`)[0];
+                popup_72602772e31eca6d36c4ccc13cd780ef.setContent(html_7cd9167bb1c130268cafef8eee9747c8);
+            
+        
+
+        marker_d74fac138364d4ed579a5c480edb8947.bindPopup(popup_72602772e31eca6d36c4ccc13cd780ef)
+        ;
+
+        
+    
+    
+            var marker_b8ee8eb60b92b7295b4a2bde6383af4a = L.marker(
+                [37.5244105465578, 126.851610192269],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_6cc37475f6f885e7e2aa11aed7b918ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4218ee25b1b5c34674f6478332396d9a = $(`<div id="html_4218ee25b1b5c34674f6478332396d9a" style="width: 100.0%; height: 100.0%;">현대정보컴퓨터: 서울특별시 양천구 오목로 129</div>`)[0];
+                popup_6cc37475f6f885e7e2aa11aed7b918ca.setContent(html_4218ee25b1b5c34674f6478332396d9a);
+            
+        
+
+        marker_b8ee8eb60b92b7295b4a2bde6383af4a.bindPopup(popup_6cc37475f6f885e7e2aa11aed7b918ca)
+        ;
+
+        
+    
+    
+            var marker_d13597e81a283072997c46616de806e3 = L.marker(
+                [37.4970504629657, 126.85764987593],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_897f8f8b8fa336746edb52b18f9e2066 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d9b572695760b4e4cba47feb1c1da5f = $(`<div id="html_2d9b572695760b4e4cba47feb1c1da5f" style="width: 100.0%; height: 100.0%;">신청산컴퓨터디자인학원: 서울특별시 구로구 경인로 338</div>`)[0];
+                popup_897f8f8b8fa336746edb52b18f9e2066.setContent(html_2d9b572695760b4e4cba47feb1c1da5f);
+            
+        
+
+        marker_d13597e81a283072997c46616de806e3.bindPopup(popup_897f8f8b8fa336746edb52b18f9e2066)
+        ;
+
+        
+    
+    
+            var marker_2f9fc56d94d74fb218c51914956c7176 = L.marker(
+                [37.5358493735383, 126.880242362545],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_cc27a6da37226730c48c164aa7765926 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f258e77dc5531fdbe6689bf8e2b8a48 = $(`<div id="html_8f258e77dc5531fdbe6689bf8e2b8a48" style="width: 100.0%; height: 100.0%;">이찬진컴퓨터교실: 서울특별시 양천구 목동동로 391</div>`)[0];
+                popup_cc27a6da37226730c48c164aa7765926.setContent(html_8f258e77dc5531fdbe6689bf8e2b8a48);
+            
+        
+
+        marker_2f9fc56d94d74fb218c51914956c7176.bindPopup(popup_cc27a6da37226730c48c164aa7765926)
+        ;
+
+        
+    
+    
+            var marker_93e7c138d549964df81b6786372892c9 = L.marker(
+                [37.5009140530445, 127.11223958478],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_a661c8592e1d22e992b381b11eb83277 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc1a1709d42a44403a6c1bd968f50a35 = $(`<div id="html_dc1a1709d42a44403a6c1bd968f50a35" style="width: 100.0%; height: 100.0%;">국제컴퓨터전산회계학원: 서울특별시 송파구 송파대로38길 5</div>`)[0];
+                popup_a661c8592e1d22e992b381b11eb83277.setContent(html_dc1a1709d42a44403a6c1bd968f50a35);
+            
+        
+
+        marker_93e7c138d549964df81b6786372892c9.bindPopup(popup_a661c8592e1d22e992b381b11eb83277)
+        ;
+
+        
+    
+    
+            var marker_7ab55fe1dffd0eb692bcaf1e81995675 = L.marker(
+                [37.5570641700401, 126.946305564498],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_1c268b6563332a8137b5bca03b6a3f62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f40c60f4c27fa5499bd60c85fb4f18c5 = $(`<div id="html_f40c60f4c27fa5499bd60c85fb4f18c5" style="width: 100.0%; height: 100.0%;">에스비에스아카데미컴퓨터학원: 서울특별시 서대문구 신촌로 183</div>`)[0];
+                popup_1c268b6563332a8137b5bca03b6a3f62.setContent(html_f40c60f4c27fa5499bd60c85fb4f18c5);
+            
+        
+
+        marker_7ab55fe1dffd0eb692bcaf1e81995675.bindPopup(popup_1c268b6563332a8137b5bca03b6a3f62)
+        ;
+
+        
+    
+    
+            var marker_c3aeb24101205643804220e8f7ad95e8 = L.marker(
+                [37.5563345623891, 126.937284068375],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d9cbed983c10bad52c21ab4ba9ff60d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4ed25000cc4948647541c90abc045fd = $(`<div id="html_c4ed25000cc4948647541c90abc045fd" style="width: 100.0%; height: 100.0%;">아텐츠게임아카데미: 서울특별시 서대문구 연세로 8-1</div>`)[0];
+                popup_d9cbed983c10bad52c21ab4ba9ff60d5.setContent(html_c4ed25000cc4948647541c90abc045fd);
+            
+        
+
+        marker_c3aeb24101205643804220e8f7ad95e8.bindPopup(popup_d9cbed983c10bad52c21ab4ba9ff60d5)
+        ;
+
+        
+    
+    
+            var marker_1dc6290c76cf50c2a04dcaffc6d5d0df = L.marker(
+                [37.5074307158543, 127.090004643288],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_82e770101e18c8c3290af79961630dd9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51f420825e87f0d554ee9243343f140d = $(`<div id="html_51f420825e87f0d554ee9243343f140d" style="width: 100.0%; height: 100.0%;">헬로알고: 서울특별시 송파구 석촌호수로 118</div>`)[0];
+                popup_82e770101e18c8c3290af79961630dd9.setContent(html_51f420825e87f0d554ee9243343f140d);
+            
+        
+
+        marker_1dc6290c76cf50c2a04dcaffc6d5d0df.bindPopup(popup_82e770101e18c8c3290af79961630dd9)
+        ;
+
+        
+    
+    
+            var marker_cac71be6f1a5f3aaca6bfe19b43b6789 = L.marker(
+                [37.6290865859215, 127.076763725367],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_320b57e1645ffff8250073f67c5e97dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87996cdccf4564b9587c713c6d163a2b = $(`<div id="html_87996cdccf4564b9587c713c6d163a2b" style="width: 100.0%; height: 100.0%;">삼성컴퓨터학원: 서울특별시 노원구 공릉로 223</div>`)[0];
+                popup_320b57e1645ffff8250073f67c5e97dc.setContent(html_87996cdccf4564b9587c713c6d163a2b);
+            
+        
+
+        marker_cac71be6f1a5f3aaca6bfe19b43b6789.bindPopup(popup_320b57e1645ffff8250073f67c5e97dc)
+        ;
+
+        
+    
+    
+            var marker_ddbc380b4efe4449f0fe243d2f08a816 = L.marker(
+                [37.5404534599662, 127.14784566379],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_f2a7b12f91b0fc11549d131fedc0628b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2ea793709c70e9efc97725ff815a7be = $(`<div id="html_d2ea793709c70e9efc97725ff815a7be" style="width: 100.0%; height: 100.0%;">중앙컴퓨터: 서울특별시 강동구 천중로 250</div>`)[0];
+                popup_f2a7b12f91b0fc11549d131fedc0628b.setContent(html_d2ea793709c70e9efc97725ff815a7be);
+            
+        
+
+        marker_ddbc380b4efe4449f0fe243d2f08a816.bindPopup(popup_f2a7b12f91b0fc11549d131fedc0628b)
+        ;
+
+        
+    
+    
+            var marker_601b2e8427e16beef2289cee086d1765 = L.marker(
+                [37.5406270373466, 127.123548667727],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_1f4ec46ea58007708e1ceb21f75b95c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56b57fd122d90f43d89bb8e92092920a = $(`<div id="html_56b57fd122d90f43d89bb8e92092920a" style="width: 100.0%; height: 100.0%;">동서울컴퓨터아트스쿨: 서울특별시 강동구 천호대로151길 36</div>`)[0];
+                popup_1f4ec46ea58007708e1ceb21f75b95c6.setContent(html_56b57fd122d90f43d89bb8e92092920a);
+            
+        
+
+        marker_601b2e8427e16beef2289cee086d1765.bindPopup(popup_1f4ec46ea58007708e1ceb21f75b95c6)
+        ;
+
+        
+    
+    
+            var marker_9936db8b9aaeffa09ee8003f67aca24c = L.marker(
+                [37.5418026292856, 127.098967962476],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_9831051d3d5860f6e2f87fe8d5205595 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ab59374ccb5093531de3d7ad3273af9 = $(`<div id="html_3ab59374ccb5093531de3d7ad3273af9" style="width: 100.0%; height: 100.0%;">디지털컴퓨터학원: 서울특별시 광진구 아차산로 522</div>`)[0];
+                popup_9831051d3d5860f6e2f87fe8d5205595.setContent(html_3ab59374ccb5093531de3d7ad3273af9);
+            
+        
+
+        marker_9936db8b9aaeffa09ee8003f67aca24c.bindPopup(popup_9831051d3d5860f6e2f87fe8d5205595)
+        ;
+
+        
+    
+    
+            var marker_93139389b1b31fbac7ef25da44fcf74e = L.marker(
+                [37.5652314667596, 127.174334204355],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_f37a3dbedf3917adfffd7eaeaa705e01 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e22243ecef3deecbcae555096b368e50 = $(`<div id="html_e22243ecef3deecbcae555096b368e50" style="width: 100.0%; height: 100.0%;">강일보습학원: 서울특별시 강동구 아리수로93길 9</div>`)[0];
+                popup_f37a3dbedf3917adfffd7eaeaa705e01.setContent(html_e22243ecef3deecbcae555096b368e50);
+            
+        
+
+        marker_93139389b1b31fbac7ef25da44fcf74e.bindPopup(popup_f37a3dbedf3917adfffd7eaeaa705e01)
+        ;
+
+        
+    
+    
+            var marker_4d5778c314a620203e284cb18505e281 = L.marker(
+                [37.5050499630967, 127.05532200064],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c8c11e8c70ff98e2620a803540842219 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4ee0fe04db7807c1cb7f4c421661f61 = $(`<div id="html_c4ee0fe04db7807c1cb7f4c421661f61" style="width: 100.0%; height: 100.0%;">웹타임: 서울특별시 강남구 테헤란로78길 16</div>`)[0];
+                popup_c8c11e8c70ff98e2620a803540842219.setContent(html_c4ee0fe04db7807c1cb7f4c421661f61);
+            
+        
+
+        marker_4d5778c314a620203e284cb18505e281.bindPopup(popup_c8c11e8c70ff98e2620a803540842219)
+        ;
+
+        
+    
+    
+            var marker_4fe79ddb7ae8a535de077bbc1e70a3ec = L.marker(
+                [37.5557368311778, 126.939952266975],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_11b7747a7bab6a668dd415cf4136c48c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_597ff4cc31f65816c50b509c947e8dad = $(`<div id="html_597ff4cc31f65816c50b509c947e8dad" style="width: 100.0%; height: 100.0%;">메가스터디IT아카데미: 서울특별시 마포구 신촌로 128</div>`)[0];
+                popup_11b7747a7bab6a668dd415cf4136c48c.setContent(html_597ff4cc31f65816c50b509c947e8dad);
+            
+        
+
+        marker_4fe79ddb7ae8a535de077bbc1e70a3ec.bindPopup(popup_11b7747a7bab6a668dd415cf4136c48c)
+        ;
+
+        
+    
+    
+            var marker_5f174366d0d8803805f46031d48907a8 = L.marker(
+                [37.4754407180431, 126.881856578356],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_4a801a301002315691cb45fe0e208cac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4006834e7920bbf68e45da953677833f = $(`<div id="html_4006834e7920bbf68e45da953677833f" style="width: 100.0%; height: 100.0%;">에스엘아카데미: 서울특별시 금천구 디지털로 130</div>`)[0];
+                popup_4a801a301002315691cb45fe0e208cac.setContent(html_4006834e7920bbf68e45da953677833f);
+            
+        
+
+        marker_5f174366d0d8803805f46031d48907a8.bindPopup(popup_4a801a301002315691cb45fe0e208cac)
+        ;
+
+        
+    
+    
+            var marker_841b37fc0f857c0a188ebf06f8d3843d = L.marker(
+                [37.4845462502899, 126.930070173692],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_917b789b48e5f33eb0cf12b14d110850 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aec76b0d00d9d30339d6e809567a1b50 = $(`<div id="html_aec76b0d00d9d30339d6e809567a1b50" style="width: 100.0%; height: 100.0%;">학원: 서울특별시 관악구 남부순환로 1615</div>`)[0];
+                popup_917b789b48e5f33eb0cf12b14d110850.setContent(html_aec76b0d00d9d30339d6e809567a1b50);
+            
+        
+
+        marker_841b37fc0f857c0a188ebf06f8d3843d.bindPopup(popup_917b789b48e5f33eb0cf12b14d110850)
+        ;
+
+        
+    
+    
+            var marker_d87318c57a55b62485191bdb737045bd = L.marker(
+                [37.5698734185631, 126.986028411103],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_24af29702dec18cb4b2c116ed93acf9b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd429ccc51a1f2ffc9ce385f8265e4d9 = $(`<div id="html_fd429ccc51a1f2ffc9ce385f8265e4d9" style="width: 100.0%; height: 100.0%;">이젠아카데미컴퓨터학원: 서울특별시 종로구 종로 78</div>`)[0];
+                popup_24af29702dec18cb4b2c116ed93acf9b.setContent(html_fd429ccc51a1f2ffc9ce385f8265e4d9);
+            
+        
+
+        marker_d87318c57a55b62485191bdb737045bd.bindPopup(popup_24af29702dec18cb4b2c116ed93acf9b)
+        ;
+
+        
+    
+    
+            var marker_66d65cce7de0b6987ae91136a7abecc7 = L.marker(
+                [37.6540792595202, 127.062786840059],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_6a89a11c9a2a520b1e6a46a3db9d5636 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df94a3b21350a975caf45970dad581e7 = $(`<div id="html_df94a3b21350a975caf45970dad581e7" style="width: 100.0%; height: 100.0%;">씨드런컴퓨터교습소: 서울특별시 노원구 동일로218길 35</div>`)[0];
+                popup_6a89a11c9a2a520b1e6a46a3db9d5636.setContent(html_df94a3b21350a975caf45970dad581e7);
+            
+        
+
+        marker_66d65cce7de0b6987ae91136a7abecc7.bindPopup(popup_6a89a11c9a2a520b1e6a46a3db9d5636)
+        ;
+
+        
+    
+    
+            var marker_1953e6e37abd429b68dd5c61ed82fcb2 = L.marker(
+                [37.4995784947768, 127.028406412843],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_94d0221d4cd28d07764c99e444adadb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a655fcb35dd77f5727a75ae4ce33ce29 = $(`<div id="html_a655fcb35dd77f5727a75ae4ce33ce29" style="width: 100.0%; height: 100.0%;">메가스터디IT아카데미: 서울특별시 강남구 강남대로94길 13</div>`)[0];
+                popup_94d0221d4cd28d07764c99e444adadb8.setContent(html_a655fcb35dd77f5727a75ae4ce33ce29);
+            
+        
+
+        marker_1953e6e37abd429b68dd5c61ed82fcb2.bindPopup(popup_94d0221d4cd28d07764c99e444adadb8)
+        ;
+
+        
+    
+    
+            var marker_2900f99abb4ee04e8a86fedf970a82e9 = L.marker(
+                [37.6640331611413, 127.042282370446],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_4a23614cd6bbe9eaa817eba9027c07db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a083508b975e2366f6f64ab67bc05017 = $(`<div id="html_a083508b975e2366f6f64ab67bc05017" style="width: 100.0%; height: 100.0%;">학원: 서울특별시 도봉구 도봉로 667</div>`)[0];
+                popup_4a23614cd6bbe9eaa817eba9027c07db.setContent(html_a083508b975e2366f6f64ab67bc05017);
+            
+        
+
+        marker_2900f99abb4ee04e8a86fedf970a82e9.bindPopup(popup_4a23614cd6bbe9eaa817eba9027c07db)
+        ;
+
+        
+    
+    
+            var marker_918e9a5f50e600dc4edcf444558723ec = L.marker(
+                [37.4820343041535, 126.948355144428],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_69d9221e01640888ae015e06c58cdeaf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6ce43ebca7bc0152052e36b16d33301 = $(`<div id="html_e6ce43ebca7bc0152052e36b16d33301" style="width: 100.0%; height: 100.0%;">씨지파이브아카데미: 서울특별시 관악구 남부순환로 1783</div>`)[0];
+                popup_69d9221e01640888ae015e06c58cdeaf.setContent(html_e6ce43ebca7bc0152052e36b16d33301);
+            
+        
+
+        marker_918e9a5f50e600dc4edcf444558723ec.bindPopup(popup_69d9221e01640888ae015e06c58cdeaf)
+        ;
+
+        
+    
+    
+            var marker_e51598a1a71ec24803b4f00c1594f6fa = L.marker(
+                [37.5737748837225, 127.016914992863],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_1b8794f6d72829510c964d93dd114cf1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9e47056b9a92d127e6d9247f9b88c206 = $(`<div id="html_9e47056b9a92d127e6d9247f9b88c206" style="width: 100.0%; height: 100.0%;">대성컴퓨터IT자격증전문교습소: 서울특별시 종로구 종로57길 8</div>`)[0];
+                popup_1b8794f6d72829510c964d93dd114cf1.setContent(html_9e47056b9a92d127e6d9247f9b88c206);
+            
+        
+
+        marker_e51598a1a71ec24803b4f00c1594f6fa.bindPopup(popup_1b8794f6d72829510c964d93dd114cf1)
+        ;
+
+        
+    
+    
+            var marker_65d2e8237e2bae495496bf6bfb9de76e = L.marker(
+                [37.5705887503931, 126.903755055023],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_d869330a408862d7b507eeaee8fd44f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb626a9a700e5c893979c94caf4d3e06 = $(`<div id="html_eb626a9a700e5c893979c94caf4d3e06" style="width: 100.0%; height: 100.0%;">굿코딩컴퓨터교습소: 서울특별시 마포구 월드컵북로38길 14</div>`)[0];
+                popup_d869330a408862d7b507eeaee8fd44f2.setContent(html_eb626a9a700e5c893979c94caf4d3e06);
+            
+        
+
+        marker_65d2e8237e2bae495496bf6bfb9de76e.bindPopup(popup_d869330a408862d7b507eeaee8fd44f2)
+        ;
+
+        
+    
+    
+            var marker_820232bffccb5f3fde7e10fcfec8d87b = L.marker(
+                [37.6186357506323, 126.914909765098],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_587d38a4621043472cac91df323cb10d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7a9bfe54068ff87e264c172bf86d28d9 = $(`<div id="html_7a9bfe54068ff87e264c172bf86d28d9" style="width: 100.0%; height: 100.0%;">리틀컴퓨터교습소: 서울특별시 은평구 갈현로 241</div>`)[0];
+                popup_587d38a4621043472cac91df323cb10d.setContent(html_7a9bfe54068ff87e264c172bf86d28d9);
+            
+        
+
+        marker_820232bffccb5f3fde7e10fcfec8d87b.bindPopup(popup_587d38a4621043472cac91df323cb10d)
+        ;
+
+        
+    
+    
+            var marker_6dd80ae271bb180c1b884f57af43e6e8 = L.marker(
+                [37.5239691384238, 126.873134353697],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_6b8a1a78ad54ece8185ccabf08ad1f9e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41752025dd5ac4d207880924deaf0cf5 = $(`<div id="html_41752025dd5ac4d207880924deaf0cf5" style="width: 100.0%; height: 100.0%;">옥토퍼스코딩컴퓨터교습소: 서울특별시 양천구 오목로54길 8-1</div>`)[0];
+                popup_6b8a1a78ad54ece8185ccabf08ad1f9e.setContent(html_41752025dd5ac4d207880924deaf0cf5);
+            
+        
+
+        marker_6dd80ae271bb180c1b884f57af43e6e8.bindPopup(popup_6b8a1a78ad54ece8185ccabf08ad1f9e)
+        ;
+
+        
+    
+    
+            var marker_86ad6c9014ec8387573392ab0b3d3ca9 = L.marker(
+                [37.4989725817301, 127.046939107288],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b0b46d6507692277e85883ebe098bd44 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e105031f110a08fe41e2e6edf7af2d24 = $(`<div id="html_e105031f110a08fe41e2e6edf7af2d24" style="width: 100.0%; height: 100.0%;">에이아이코딩교습소: 서울특별시 강남구 역삼로 306</div>`)[0];
+                popup_b0b46d6507692277e85883ebe098bd44.setContent(html_e105031f110a08fe41e2e6edf7af2d24);
+            
+        
+
+        marker_86ad6c9014ec8387573392ab0b3d3ca9.bindPopup(popup_b0b46d6507692277e85883ebe098bd44)
+        ;
+
+        
+    
+    
+            var marker_fda53d868c75c09f7f944a5d86438d6a = L.marker(
+                [37.4492267288673, 126.900804436508],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_a329ac58795c087cbefc35ed731c78bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d7ce0a1424f51a0ad1da9290249afa8 = $(`<div id="html_4d7ce0a1424f51a0ad1da9290249afa8" style="width: 100.0%; height: 100.0%;">아이티취업교육센터: 서울특별시 금천구 시흥대로45길 16</div>`)[0];
+                popup_a329ac58795c087cbefc35ed731c78bd.setContent(html_4d7ce0a1424f51a0ad1da9290249afa8);
+            
+        
+
+        marker_fda53d868c75c09f7f944a5d86438d6a.bindPopup(popup_a329ac58795c087cbefc35ed731c78bd)
+        ;
+
+        
+    
+    
+            var marker_cb8e4df7df2a242da9f6bc7184d27981 = L.marker(
+                [37.514395576229, 127.011484290138],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_f5d684a5c6c795c9d53397c370c2029e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bab23f53dfa63322a7bcfffca5e1eb00 = $(`<div id="html_bab23f53dfa63322a7bcfffca5e1eb00" style="width: 100.0%; height: 100.0%;">쏘아코딩: 서울특별시 서초구 잠원로8길 25</div>`)[0];
+                popup_f5d684a5c6c795c9d53397c370c2029e.setContent(html_bab23f53dfa63322a7bcfffca5e1eb00);
+            
+        
+
+        marker_cb8e4df7df2a242da9f6bc7184d27981.bindPopup(popup_f5d684a5c6c795c9d53397c370c2029e)
+        ;
+
+        
+    
+    
+            var marker_0f8694ba8029bf7ee79e0232185670e3 = L.marker(
+                [37.5067406686143, 127.020622394031],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8f3d107a728f4e36fe23246cc8f7d87b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2792f64256b349a13f879e67017fac86 = $(`<div id="html_2792f64256b349a13f879e67017fac86" style="width: 100.0%; height: 100.0%;">코딩잘하는집: 서울특별시 서초구 주흥길 44-12</div>`)[0];
+                popup_8f3d107a728f4e36fe23246cc8f7d87b.setContent(html_2792f64256b349a13f879e67017fac86);
+            
+        
+
+        marker_0f8694ba8029bf7ee79e0232185670e3.bindPopup(popup_8f3d107a728f4e36fe23246cc8f7d87b)
+        ;
+
+        
+    
+    
+            var marker_38cc90b565ce04f1181d2232f26c9967 = L.marker(
+                [37.5608576252202, 126.845165304815],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_244636125792df6c67f0399c9a50fdbb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1749e60305b8523cc22a1140af8a891d = $(`<div id="html_1749e60305b8523cc22a1140af8a891d" style="width: 100.0%; height: 100.0%;">카우치코딩: 서울특별시 강서구 공항대로39길 74</div>`)[0];
+                popup_244636125792df6c67f0399c9a50fdbb.setContent(html_1749e60305b8523cc22a1140af8a891d);
+            
+        
+
+        marker_38cc90b565ce04f1181d2232f26c9967.bindPopup(popup_244636125792df6c67f0399c9a50fdbb)
+        ;
+
+        
+    
+    
+            var marker_5ab720111632ef5e9f6fe8d3144291f4 = L.marker(
+                [37.5510812803324, 126.972894752757],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_62d306bcbb7eaa1b4af9906a6f206852 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd7392b888e9e3d342d2be0082297093 = $(`<div id="html_fd7392b888e9e3d342d2be0082297093" style="width: 100.0%; height: 100.0%;">코드키즈코딩하는아이들: 서울특별시 용산구 한강대로 366</div>`)[0];
+                popup_62d306bcbb7eaa1b4af9906a6f206852.setContent(html_fd7392b888e9e3d342d2be0082297093);
+            
+        
+
+        marker_5ab720111632ef5e9f6fe8d3144291f4.bindPopup(popup_62d306bcbb7eaa1b4af9906a6f206852)
+        ;
+
+        
+    
+    
+            var marker_d81fb84af9c8a3d2d4e3f9f27cd6ee3c = L.marker(
+                [37.5719014151397, 126.808611508001],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_558063bb9cf088299b9c0e3978a6b60c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7bdc159d378126f03afc6045055e693 = $(`<div id="html_c7bdc159d378126f03afc6045055e693" style="width: 100.0%; height: 100.0%;">파이코딩랩: 서울특별시 강서구 양천로14가길 23</div>`)[0];
+                popup_558063bb9cf088299b9c0e3978a6b60c.setContent(html_c7bdc159d378126f03afc6045055e693);
+            
+        
+
+        marker_d81fb84af9c8a3d2d4e3f9f27cd6ee3c.bindPopup(popup_558063bb9cf088299b9c0e3978a6b60c)
+        ;
+
+        
+    
+    
+            var marker_b6d8251b8ee3b16fac4c7b7ca19c6b38 = L.marker(
+                [37.5047014738657, 127.035612539889],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c0eae7366c91636d795723421b7a332e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca79cf891c3f33acd50d0fa2bbac9266 = $(`<div id="html_ca79cf891c3f33acd50d0fa2bbac9266" style="width: 100.0%; height: 100.0%;">초보코딩: 서울특별시 강남구 논현로102길 4</div>`)[0];
+                popup_c0eae7366c91636d795723421b7a332e.setContent(html_ca79cf891c3f33acd50d0fa2bbac9266);
+            
+        
+
+        marker_b6d8251b8ee3b16fac4c7b7ca19c6b38.bindPopup(popup_c0eae7366c91636d795723421b7a332e)
+        ;
+
+        
+    
+    
+            var marker_3f5707e2483c75728c7b4331a7ead76b = L.marker(
+                [37.6099409086806, 127.037471898964],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_1d1dfae40bba98d1d5af3922b9bfb7e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ff5bdede729a640f2279e69bf47aeaf = $(`<div id="html_9ff5bdede729a640f2279e69bf47aeaf" style="width: 100.0%; height: 100.0%;">메타코딩: 서울특별시 성북구 오패산로 90</div>`)[0];
+                popup_1d1dfae40bba98d1d5af3922b9bfb7e1.setContent(html_9ff5bdede729a640f2279e69bf47aeaf);
+            
+        
+
+        marker_3f5707e2483c75728c7b4331a7ead76b.bindPopup(popup_1d1dfae40bba98d1d5af3922b9bfb7e1)
+        ;
+
+        
+    
+    
+            var marker_fecec79405b950b4baeee0810cd5de14 = L.marker(
+                [37.4925785751998, 126.931504846795],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_07cdad53204d6d0be82ec20d66755e47 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_829ba388626f6bfcaa0b9efc2745c750 = $(`<div id="html_829ba388626f6bfcaa0b9efc2745c750" style="width: 100.0%; height: 100.0%;">유기농코딩: 서울특별시 관악구 당곡6나길 33</div>`)[0];
+                popup_07cdad53204d6d0be82ec20d66755e47.setContent(html_829ba388626f6bfcaa0b9efc2745c750);
+            
+        
+
+        marker_fecec79405b950b4baeee0810cd5de14.bindPopup(popup_07cdad53204d6d0be82ec20d66755e47)
+        ;
+
+        
+    
+    
+            var marker_a2d22863fbfbcb6923ecd01a4ea1722d = L.marker(
+                [37.6257320225536, 127.016219765005],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c501bdc7f0ec1171dd0c3054c492018a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ee4c6ae3d6b71c389009e5f8f676db8 = $(`<div id="html_0ee4c6ae3d6b71c389009e5f8f676db8" style="width: 100.0%; height: 100.0%;">코딩덕성: 서울특별시 강북구 솔매로17길 5</div>`)[0];
+                popup_c501bdc7f0ec1171dd0c3054c492018a.setContent(html_0ee4c6ae3d6b71c389009e5f8f676db8);
+            
+        
+
+        marker_a2d22863fbfbcb6923ecd01a4ea1722d.bindPopup(popup_c501bdc7f0ec1171dd0c3054c492018a)
+        ;
+
+        
+    
+    
+            var marker_8b13c8a2a1d9110871709ff60a305856 = L.marker(
+                [37.5933396313167, 126.922320454112],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_df0e707079dcd4647bc5ceb6302ccd03 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_576e2cf8f587ded5e189b92971dd4b20 = $(`<div id="html_576e2cf8f587ded5e189b92971dd4b20" style="width: 100.0%; height: 100.0%;">이지코딩: 서울특별시 은평구 응암로22길 37</div>`)[0];
+                popup_df0e707079dcd4647bc5ceb6302ccd03.setContent(html_576e2cf8f587ded5e189b92971dd4b20);
+            
+        
+
+        marker_8b13c8a2a1d9110871709ff60a305856.bindPopup(popup_df0e707079dcd4647bc5ceb6302ccd03)
+        ;
+
+        
+    
+    
+            var marker_0803809300ec14b206f8f13695c37c65 = L.marker(
+                [37.4833815145927, 126.896505106137],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_942bcbbd0e58d25e1ab8b95501af1d14 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f3e992fa9568b19f1a20a0956d2ba4f = $(`<div id="html_8f3e992fa9568b19f1a20a0956d2ba4f" style="width: 100.0%; height: 100.0%;">메타코딩: 서울특별시 구로구 디지털로32길 30</div>`)[0];
+                popup_942bcbbd0e58d25e1ab8b95501af1d14.setContent(html_8f3e992fa9568b19f1a20a0956d2ba4f);
+            
+        
+
+        marker_0803809300ec14b206f8f13695c37c65.bindPopup(popup_942bcbbd0e58d25e1ab8b95501af1d14)
+        ;
+
+        
+    
+    
+            var marker_809cb37f14315bf66da9f0b0f1aa6989 = L.marker(
+                [37.5655259205494, 127.028354201506],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8384a4712233005832f38feec1065785 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c38536ff444a3a3f0b92b9aa18e64f8 = $(`<div id="html_8c38536ff444a3a3f0b92b9aa18e64f8" style="width: 100.0%; height: 100.0%;">인스트라코딩: 서울특별시 성동구 왕십리로 410</div>`)[0];
+                popup_8384a4712233005832f38feec1065785.setContent(html_8c38536ff444a3a3f0b92b9aa18e64f8);
+            
+        
+
+        marker_809cb37f14315bf66da9f0b0f1aa6989.bindPopup(popup_8384a4712233005832f38feec1065785)
+        ;
+
+        
+    
+    
+            var marker_22b8f3443519d7e98c11ef4ecfab1f16 = L.marker(
+                [37.5339767813768, 126.840262127018],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_557776be5b57d2ba96ecc95ee1b85924 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a91b7ffd0fdf19cc6baae70746e2a009 = $(`<div id="html_a91b7ffd0fdf19cc6baae70746e2a009" style="width: 100.0%; height: 100.0%;">윤코딩스튜디오: 서울특별시 강서구 가로공원로78가길 37</div>`)[0];
+                popup_557776be5b57d2ba96ecc95ee1b85924.setContent(html_a91b7ffd0fdf19cc6baae70746e2a009);
+            
+        
+
+        marker_22b8f3443519d7e98c11ef4ecfab1f16.bindPopup(popup_557776be5b57d2ba96ecc95ee1b85924)
+        ;
+
+        
+    
+    
+            var marker_7c37c7449f980a8027ae541a6e1b0932 = L.marker(
+                [37.5532623173916, 127.168750812198],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_8bf64626c94df36c468f3ec2e703e54d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b5d4f7a94a21b8b641fdcbde68f9e6f = $(`<div id="html_9b5d4f7a94a21b8b641fdcbde68f9e6f" style="width: 100.0%; height: 100.0%;">코딩플러스: 서울특별시 강동구 상일로 55</div>`)[0];
+                popup_8bf64626c94df36c468f3ec2e703e54d.setContent(html_9b5d4f7a94a21b8b641fdcbde68f9e6f);
+            
+        
+
+        marker_7c37c7449f980a8027ae541a6e1b0932.bindPopup(popup_8bf64626c94df36c468f3ec2e703e54d)
+        ;
+
+        
+    
+    
+            var marker_fcac8b276529d550816a06d27f4a2855 = L.marker(
+                [37.65737146489, 127.074634240746],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3cac1e9465d1b4c2db37fccb3e5099cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_147e1e89ecfd6a358a4ca444d1f02ed3 = $(`<div id="html_147e1e89ecfd6a358a4ca444d1f02ed3" style="width: 100.0%; height: 100.0%;">미디어에듀컴퓨터교습소: 서울특별시 노원구 덕릉로 669</div>`)[0];
+                popup_3cac1e9465d1b4c2db37fccb3e5099cc.setContent(html_147e1e89ecfd6a358a4ca444d1f02ed3);
+            
+        
+
+        marker_fcac8b276529d550816a06d27f4a2855.bindPopup(popup_3cac1e9465d1b4c2db37fccb3e5099cc)
+        ;
+
+        
+    
+    
+            var marker_b0f74c9e586b5c7f691067b074e22801 = L.marker(
+                [37.5689973159192, 127.019920988792],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_823b84996bdd4fb6fb5b38af3ad376ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d83a721c7981cc3ade418de457bbb0f8 = $(`<div id="html_d83a721c7981cc3ade418de457bbb0f8" style="width: 100.0%; height: 100.0%;">코딩학원: 서울특별시 중구 난계로15길 63</div>`)[0];
+                popup_823b84996bdd4fb6fb5b38af3ad376ed.setContent(html_d83a721c7981cc3ade418de457bbb0f8);
+            
+        
+
+        marker_b0f74c9e586b5c7f691067b074e22801.bindPopup(popup_823b84996bdd4fb6fb5b38af3ad376ed)
+        ;
+
+        
+    
+    
+            var marker_57b67733ca7997db3ed712e746816a0b = L.marker(
+                [37.5020748377978, 127.057372650959],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_b3a2c72e2bf4b1a56aea9d197c6f9857 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44d0a8a9a62d50dedb394a49a5cd2f53 = $(`<div id="html_44d0a8a9a62d50dedb394a49a5cd2f53" style="width: 100.0%; height: 100.0%;">크레버스씨큐브코딩대치: 서울특별시 강남구 삼성로71길 18</div>`)[0];
+                popup_b3a2c72e2bf4b1a56aea9d197c6f9857.setContent(html_44d0a8a9a62d50dedb394a49a5cd2f53);
+            
+        
+
+        marker_57b67733ca7997db3ed712e746816a0b.bindPopup(popup_b3a2c72e2bf4b1a56aea9d197c6f9857)
+        ;
+
+        
+    
+    
+            var marker_3fde1c36775ce19f2f0056818d243110 = L.marker(
+                [37.4849135072657, 126.89652780139],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_49eb990b055caf46e944fd360d8412f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d83ef9ed78bb80183b506b795ef7026 = $(`<div id="html_8d83ef9ed78bb80183b506b795ef7026" style="width: 100.0%; height: 100.0%;">딩코: 서울특별시 구로구 디지털로 300</div>`)[0];
+                popup_49eb990b055caf46e944fd360d8412f9.setContent(html_8d83ef9ed78bb80183b506b795ef7026);
+            
+        
+
+        marker_3fde1c36775ce19f2f0056818d243110.bindPopup(popup_49eb990b055caf46e944fd360d8412f9)
+        ;
+
+        
+    
+    
+            var marker_445a21066c0f2c1049ba48a656829a82 = L.marker(
+                [37.5023373221467, 127.01122482443],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_3049104956faef721fb5f501491d6977 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a169aaaf69ec6c42ecbfbea003dfb24 = $(`<div id="html_0a169aaaf69ec6c42ecbfbea003dfb24" style="width: 100.0%; height: 100.0%;">크레버스씨큐브코딩서초: 서울특별시 서초구 고무래로 26</div>`)[0];
+                popup_3049104956faef721fb5f501491d6977.setContent(html_0a169aaaf69ec6c42ecbfbea003dfb24);
+            
+        
+
+        marker_445a21066c0f2c1049ba48a656829a82.bindPopup(popup_3049104956faef721fb5f501491d6977)
+        ;
+
+        
+    
+    
+            var marker_bc489491e0d4b73bd3a254dd43793343 = L.marker(
+                [37.5386564130069, 126.950411873857],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ed10727043abe7a7b4c76e21ae2ef136 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c82896fffde3780b3292393408d20ff = $(`<div id="html_7c82896fffde3780b3292393408d20ff" style="width: 100.0%; height: 100.0%;">코딩온도화점코딩교습소: 서울특별시 마포구 도화2길 53</div>`)[0];
+                popup_ed10727043abe7a7b4c76e21ae2ef136.setContent(html_7c82896fffde3780b3292393408d20ff);
+            
+        
+
+        marker_bc489491e0d4b73bd3a254dd43793343.bindPopup(popup_ed10727043abe7a7b4c76e21ae2ef136)
+        ;
+
+        
+    
+    
+            var marker_6f3601f74c667020240fdde90d5b5fbb = L.marker(
+                [37.4802571877188, 126.885233279816],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_ca77704427009551a433084d4852faa2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ff8966fe788c17239f53b94b0c2dc78 = $(`<div id="html_9ff8966fe788c17239f53b94b0c2dc78" style="width: 100.0%; height: 100.0%;">학원: 서울특별시 금천구 디지털로9길 65</div>`)[0];
+                popup_ca77704427009551a433084d4852faa2.setContent(html_9ff8966fe788c17239f53b94b0c2dc78);
+            
+        
+
+        marker_6f3601f74c667020240fdde90d5b5fbb.bindPopup(popup_ca77704427009551a433084d4852faa2)
+        ;
+
+        
+    
+    
+            var marker_6f20b56b455236e9007e0fe985a1ba09 = L.marker(
+                [37.4856482918655, 127.016442693525],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_473ceffab765373740964c2dda278063 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5dd2fc40602a790854d260ab9f2e418 = $(`<div id="html_b5dd2fc40602a790854d260ab9f2e418" style="width: 100.0%; height: 100.0%;">학원: 서울특별시 서초구 서초중앙로 40-6</div>`)[0];
+                popup_473ceffab765373740964c2dda278063.setContent(html_b5dd2fc40602a790854d260ab9f2e418);
+            
+        
+
+        marker_6f20b56b455236e9007e0fe985a1ba09.bindPopup(popup_473ceffab765373740964c2dda278063)
+        ;
+
+        
+    
+    
+            var marker_5927ce681439631efe5d24efd6c0807f = L.marker(
+                [37.5216446997506, 126.83966116],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_00282e589c13944f15c0833162e2980e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4812fe667bfc79639623f7175e335f5b = $(`<div id="html_4812fe667bfc79639623f7175e335f5b" style="width: 100.0%; height: 100.0%;">메타코딩컴퓨터교습소: 서울특별시 양천구 오목로 19</div>`)[0];
+                popup_00282e589c13944f15c0833162e2980e.setContent(html_4812fe667bfc79639623f7175e335f5b);
+            
+        
+
+        marker_5927ce681439631efe5d24efd6c0807f.bindPopup(popup_00282e589c13944f15c0833162e2980e)
+        ;
+
+        
+    
+    
+            var marker_e76aaa6a81e3d19c50799e57ad59b81a = L.marker(
+                [37.5034522766682, 127.019590893078],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_aa6237d511666de1532e43d831904998 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e181f8c09f90f648749c1d5671a62a50 = $(`<div id="html_e181f8c09f90f648749c1d5671a62a50" style="width: 100.0%; height: 100.0%;">네오락: 서울특별시 서초구 사평대로 335</div>`)[0];
+                popup_aa6237d511666de1532e43d831904998.setContent(html_e181f8c09f90f648749c1d5671a62a50);
+            
+        
+
+        marker_e76aaa6a81e3d19c50799e57ad59b81a.bindPopup(popup_aa6237d511666de1532e43d831904998)
+        ;
+
+        
+    
+    
+            var marker_d03aa857327ce20ea4776218debc8d7b = L.marker(
+                [37.5261706758334, 127.029758653822],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_c686c23343f758fa756f43f539fedf21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41a50537c8440b359b504a642185264f = $(`<div id="html_41a50537c8440b359b504a642185264f" style="width: 100.0%; height: 100.0%;">휴몬랩코딩아카데미: 서울특별시 강남구 압구정로32길 24</div>`)[0];
+                popup_c686c23343f758fa756f43f539fedf21.setContent(html_41a50537c8440b359b504a642185264f);
+            
+        
+
+        marker_d03aa857327ce20ea4776218debc8d7b.bindPopup(popup_c686c23343f758fa756f43f539fedf21)
+        ;
+
+        
+    
+    
+            var marker_15b2b2665b69f2002ba0f61c8f9a0a43 = L.marker(
+                [37.537378150663, 127.128950147315],
+                {}
+            ).addTo(map_fe9be5dbb14d3cc8e4e29314f40e3aaf);
+        
+    
+        var popup_a2f6c16414e13d79147dca13cabeb883 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2eaddf0d5c49274f46aecd75047188b0 = $(`<div id="html_2eaddf0d5c49274f46aecd75047188b0" style="width: 100.0%; height: 100.0%;">예성아이티아카데미: 서울특별시 강동구 천호대로 1053</div>`)[0];
+                popup_a2f6c16414e13d79147dca13cabeb883.setContent(html_2eaddf0d5c49274f46aecd75047188b0);
+            
+        
+
+        marker_15b2b2665b69f2002ba0f61c8f9a0a43.bindPopup(popup_a2f6c16414e13d79147dca13cabeb883)
+        ;
+
+        
+    
+</script>
+</html>
