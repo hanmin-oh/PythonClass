@@ -14,3 +14,6 @@
 	9) example_3:
 	10) example_4:
 	11) example_5:
+
+4. machineLearning & deepLearning
+	- 10/10 : 사이킷런 데이터셋, 데이터전처리복습(원-핫 인코딩), 데이터 스케일링, 모델 평가
